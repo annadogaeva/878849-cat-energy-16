@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Анна Догаева](https://up.htmlacademy.ru/adaptive/16/user/878849).
-* Наставник: `Неизвестно`.
+* Наставник: Ольга Ветер.
 
 ---
 
