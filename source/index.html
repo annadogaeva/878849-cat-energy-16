@@ -7,21 +7,21 @@
 </head>
 
 <body>
-  <header class="page-header">
-    <div class="page-header__logo-icon">
-      <a href="#"><img src="#" width="#" height="#" alt="Логотип Кэт-Энерджи"></a>
+  <header class="header">
+    <div class="header__logo">
+      <a href="#">
+        <img src="#" width="#" height="#" alt="Логотип Кэт-Энерджи">
+        <img src="#" width="#" height="#" alt="Кэт-Энерджи">
+      </a>
     </div>
-    <div class="page-header__logo">
-      <img src="#" width="#" height="#" alt="Кэт-Энерджи">
-    </div>
-    <div class="page-header__menu-btn">
+    <div class="header__menu-btn">
       <a href=""><img src="#" width="#" height="#" alt="Меню"></a>
     </div>
-    <nav class="main-nav">
-      <ul class="main-nav__list">
-        <li class="main-nav__item"><a href="index.html" class="main-nav__link">Главная</a></li>
-        <li class="main-nav__item"><a href="catalog.html" class="main-nav__link">Каталог продукции</a></li>
-        <li class="main-nav__item"><a href="form.html" class="main-nav__link">Подбор программы</a></li>
+    <nav class="nav">
+      <ul class="nav__list">
+        <li class="nav__item"><a href="#" class="nav__link">Главная</a></li>
+        <li class="nav__item"><a href="catalog.html" class="nav__link">Каталог продукции</a></li>
+        <li class="nav__item"><a href="form.html" class="nav__link">Подбор программы</a></li>
       </ul>
     </nav>
     <h1 class="visually-hidden">Кэт Энерджи - магазин функционального питания для котов.</h1>
@@ -71,14 +71,16 @@
       <p class="example__description">
         Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.
       </p>
-      <div class="example__result result">
-        5 кг
-        <span class="result__descripton">снижение веса</span>
-      </div>
-      <div class="example__result result">
-        60 дней
-        <span class="result__descripton">затрачено времени</span>
-      </div>
+      <ul class="example__results-list">
+        <li class="example__result result">
+          <span class="result__count">5 кг</span>
+          <span class="result__descripton">снижение веса</span>
+        </li>
+        <li class="example__result result">
+          <span class="result__descripton">60 дней</span>
+          <span class="result__descripton">затрачено времени</span>
+        </li>
+      </ul>
       <p class="example__cost">Затраты на питание: 15 000 руб.</p>
       <div class="example__cat-slider cat-slider">
         <ul class="cat-slider__slider-list">
@@ -96,30 +98,30 @@
         </div>
       </div>
     </section>
-  </main>
-  <footer class="page-footer">
-      <section class="page-footer__contacts contacts">
-        <h2 class="visually-hidden">Контактная информация</h2>
-      <div class="contacts__contact-info contact-info">
-        <div class="contact-info__invite">Приглашаем к сотрудничеству дилеров!</div>
-        <div class="contact-info__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</div>
+    <section class="contacts">
+      <h2 class="visually-hidden">Контактная информация</h2>
+      <div class="contacts__wrapper">
+        <div class="contacts__invite">Приглашаем к сотрудничеству дилеров!</div>
+        <div class="contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</div>
       </div>
       <div class="contacts__map">
         <!--<iframe src=""></iframe>-->
         <img src="#" alt="ул. Большая Конюшенная, д. 19/8 г.Санкт-Петербург">
       </div>
     </section>
-    <div class="page-footer__logo">
+  </main>
+  <footer class="footer">
+    <div class="footer__logo">
       <a href="#"><img src="#" alt="Логотип Кэт Энерджи"></a>
     </div>
-    <div class="page-footer__social social">
+    <div class="footer__social social">
       <ul class="social__list">
         <li class="social__item"><a href="#" class="social__btn social__btn--vk"><span class="visually-hidden">Вконтакте</span></a></li>
         <li class="social__item"><a href="#" class="social__btn social__btn--instagram"><span class="visually-hidden">Инстаграм</span></a></li>
         <li class="social__item"><a href="#" class="social__btn social__btn--facebook"><span class="visually-hidden">Фейсбук</span></a></li>
       </ul>
     </div>
-    <div class="page-footer__copyright copyright">
+    <div class="footer__copyright copyright">
       <a href="https://htmlacademy.ru/intensive/adaptive">
         <div class="copyright__text">HTML Academy</div>
       </a>
