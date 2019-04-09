@@ -1,0 +1,19 @@
+.about {
+  background-color: white;
+  padding: 35px 20px;
+}
+
+.about__heading {
+ @include heading;
+ margin-bottom: 30px;
+}
+
+.about__list {
+  @include lists;
+}
+
+.about__item {
+  margin-left: 80px;
+  margin-bottom: 30px;
+  position: relative;
+}

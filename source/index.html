@@ -3,20 +3,22 @@
 
 <head>
   <meta charset="utf-8">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
   <title>HTML Academy: Кэт энерджи</title>
 </head>
 
 <body>
   <header class="header">
+    <div class="header__wrapper">
     <div class="header__logo">
       <a href="#">
-        <img src="#" width="#" height="#" alt="Логотип Кэт-Энерджи">
-        <img src="#" width="#" height="#" alt="Кэт-Энерджи">
+        <img src="../img/logo-mobile.svg" width="250" height="66" alt="Логотип Кэт-Энерджи">
       </a>
     </div>
     <div class="header__menu-btn">
-      <a href=""><img src="#" width="#" height="#" alt="Меню"></a>
+      <a href=""><img src="../img/icon-mobile-menu.svg" width="25" height="25" alt="Меню"></a>
     </div>
+  </div>
     <nav class="nav">
       <ul class="nav__list">
         <li class="nav__item"><a href="#" class="nav__link">Главная</a></li>
@@ -35,8 +37,8 @@
       <p class="promo__banner-description">
         Занялся собой? Займись котом!
       </p>
-      <a href="#" class="promo__choose-btn">Подобрать программу</a>
-      <img src="#" width="#" height="#" alt="Кэт Энерджи PRO - Курица">
+      <img src="../img/index-can-mobile@1x.png" width="#" height="#" alt="Кэт Энерджи PRO - Курица">
+      <a href="#" class="promo__choose-btn button">Подобрать программу</a>
     </section>
     <section class="programs">
       <h2 class="visually-hidden">Программы</h2>
@@ -77,7 +79,7 @@
           <span class="result__descripton">снижение веса</span>
         </li>
         <li class="example__result result">
-          <span class="result__descripton">60 дней</span>
+          <span class="result__count">60 дней</span>
           <span class="result__descripton">затрачено времени</span>
         </li>
       </ul>
@@ -85,10 +87,10 @@
       <div class="example__cat-slider cat-slider">
         <ul class="cat-slider__slider-list">
           <li class="cat-slider__slider-item cat-slider__slider-item--fat-cat">
-            <img src="#" width="#" height="#" alt="Кот Борис До">
+            <img src="../img/before-mobile@1x.png" width="#" height="#" alt="Кот Борис До">
           </li>
           <li class="cat-slider__slider-item cat-slider__slider-item--thin-cat">
-            <img src="#" width="#" height="#" alt="Кот Борис После">
+            <img src="../img/after-mobile@1x.png" width="#" height="#" alt="Кот Борис После">
           </li>
         </ul>
         <div class="cat-slider__toggle">
@@ -106,13 +108,13 @@
       </div>
       <div class="contacts__map">
         <!--<iframe src=""></iframe>-->
-        <img src="#" alt="ул. Большая Конюшенная, д. 19/8 г.Санкт-Петербург">
+        <img src="../img/map-pin.png" alt="ул. Большая Конюшенная, д. 19/8 г.Санкт-Петербург" class="contacts__pin">
       </div>
     </section>
   </main>
   <footer class="footer">
     <div class="footer__logo">
-      <a href="#"><img src="#" alt="Логотип Кэт Энерджи"></a>
+      <a href="#"><img src="../img/logo-footer.svg" alt="Логотип Кэт Энерджи" width="130"></a>
     </div>
     <div class="footer__social social">
       <ul class="social__list">
@@ -122,11 +124,11 @@
       </ul>
     </div>
     <div class="footer__copyright copyright">
-      <a href="https://htmlacademy.ru/intensive/adaptive">
+      <a href="https://htmlacademy.ru/intensive/adaptive" class="copyright__link">
         <div class="copyright__text">HTML Academy</div>
       </a>
       <a href="https://htmlacademy.ru/intensive/adaptive">
-        <div class="copyright__logo"><img src="#" alt="HTML Academy"></div>
+        <div class="copyright__logo"><img src="../img/htmlacademy.svg" alt="HTML Academy" width="27"></div>
       </a>
     </div>
   </footer>

@@ -1,0 +1,15 @@
+.result {
+  border: $border;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  border-radius: 3px;
+}
+
+.result__count {
+  @include heading-medium;
+}
+
+.result__descripton {
+  font-size: 12px;
+}

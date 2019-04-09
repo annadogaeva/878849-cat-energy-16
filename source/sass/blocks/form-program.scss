@@ -1,0 +1,25 @@
+.form-program__section {
+  border: none;
+  display: flex;
+  flex-direction: column;
+  @include zero;
+  padding: 20px 0;
+  &--main {
+    border-bottom: $border;
+  }
+}
+
+.form-program__label {
+  @include heading-small;
+  text-transform: uppercase;
+}
+
+.form-program__section-name {
+  @include heading-medium;
+  margin: 0;
+  padding: 0;
+}
+
+.form-program__required-fields {
+  text-align: center;
+}

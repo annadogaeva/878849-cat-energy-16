@@ -3,19 +3,21 @@
 
 <head>
   <meta charset="utf-8">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
   <title>HTML Academy: Кэт энерджи</title>
 </head>
 
 <body>
   <header class="header">
-    <div class="header__logo">
-      <a href="index.html">
-        <img src="#" width="#" height="#" alt="Логотип Кэт-Энерджи">
-        <img src="#" width="#" height="#" alt="Кэт-Энерджи">
-      </a>
-    </div>
-    <div class="header__menu-btn">
-      <a href=""><img src="#" width="#" height="#" alt="Меню"></a>
+    <div class="header__wrapper">
+      <div class="header__logo">
+        <a href="index.html">
+          <img src="../img/logo-mobile.svg" width="250" height="66" alt="Логотип Кэт-Энерджи">
+        </a>
+      </div>
+      <div class="header__menu-btn">
+        <a href=""><img src="../img/icon-mobile-menu.svg" width="25" height="25" alt="Меню"></a>
+      </div>
     </div>
     <nav class="nav">
       <ul class="nav__list">
@@ -32,22 +34,22 @@
       <p class="program__description">Заполните анкету и мы подберем программу питания для вашего кота</p>
       <form method="post" class="program__form form-program" action="https://echo.htmlacademy.ru">
         <h3 class="visually-hidden">Анкета</h3>
-        <fieldset class="form-program__section">
+        <fieldset class="form-program__section form-program__section--main">
           <legend class="visually-hidden">Основные данные</legend>
-          <label for="cat-name">Имя:*</label><input type="text" id="cat-name" required name="cat-name" class="form-program__text input-text">
-          <label for="cat-weight">Вес (кг):*</label><input type="text" id="cat-weight" required name="cat-weight" class="form-program__text input-text">
-          <label for="cat-age">Возраст (лет):</label><input type="text" id="cat-age" name="cat-age" class="form-program__text input-text">
+          <label for="cat-name" class="form-program__label">Имя:*</label><input type="text" id="cat-name" required name="cat-name" class="form-program__text input-text">
+          <label for="cat-weight" class="form-program__label">Вес (кг):*</label><input type="text" id="cat-weight" required name="cat-weight" class="form-program__text input-text">
+          <label for="cat-age" class="form-program__label">Возраст (лет):</label><input type="text" id="cat-age" name="cat-age" class="form-program__text input-text">
         </fieldset>
-        <fieldset class="form-program__section">
+        <fieldset class="form-program__section form-program__section--main">
           <legend class="visually-hidden">Выбор программы</legend>
-          <input type="radio" name="program-select" id="program1" class="visually-hidden"><label for="program1" tabindex="0" class="form-program__radio radio">Похудение</label>
-          <input type="radio" name="program-select" id="program2" class="visually-hidden"><label for="program2" tabindex="0" class="form-program__radio radio">Набор массы</label>
-          <input type="radio" name="program-select" id="program3" class="visually-hidden"><label for="program3" tabindex="0" class="form-program__radio radio">Не знаю (нужен ваш совет)</label>
+          <input type="radio" name="program-select" id="program1" class="visually-hidden"><label for="program1" tabindex="0" class="form-program__radio radio form-program__label">Похудение</label>
+          <input type="radio" name="program-select" id="program2" class="visually-hidden"><label for="program2" tabindex="0" class="form-program__radio radio form-program__label">Набор массы</label>
+          <input type="radio" name="program-select" id="program3" class="visually-hidden"><label for="program3" tabindex="0" class="form-program__radio radio form-program__label">Не знаю (нужен ваш совет)</label>
         </fieldset>
         <fieldset class="form-program__section">
-          <legend class="form-program__section-name">Контактная информация</legend>
-          <label for="email">E-mail:*</label><input type="email" id="email" required name="email" class="form-program__email input-email">
-          <label for="phone-number">Телефон:*</label><input type="tel" id="phone-number" required name="phone-number" class="form-program__tel input-tel">
+          <legend class="form-program__section-name">Контактные данные (владельца кота)</legend>
+          <label for="email"  class="form-program__label">E-mail:*</label><input type="email" id="email" required name="email" class="form-program__email input-email">
+          <label for="phone-number" class="form-program__label">Телефон:*</label><input type="tel" id="phone-number" required name="phone-number" class="form-program__tel input-tel">
         </fieldset>
         <fieldset class="form-program__section">
           <legend class="form-program__section-name">Комментарий</legend>
@@ -55,10 +57,10 @@
         </fieldset>
         <fieldset class="form-program__section">
           <legend class="form-program__section-name">Дополнительно</legend>
-          <input type="checkbox" id="checkbox1" class="visually-hidden" name="nosugar"><label for="checkbox1" tabindex="0" class="form-program__checkbox checkbox">Сахарозаменитель</label>
-          <input type="checkbox" id="checkbox2" class="visually-hidden" name="water"><label for="checkbox2" tabindex="0" class="form-program__checkbox checkbox">Питьевая вода</label>
-          <input type="checkbox" id="checkbox3" class="visually-hidden" name="milk"><label for="checkbox3" tabindex="0" class="form-program__checkbox checkbox">Молоко</label>
-          <input type="checkbox" id="checkbox4" class="visually-hidden" name="vitamin"><label for="checkbox4" tabindex="0" class="form-program__checkbox checkbox">Витамины</label>
+          <input type="checkbox" id="checkbox1" class="visually-hidden" name="nosugar"><label for="checkbox1" tabindex="0" class="form-program__checkbox checkbox form-program__label">Сахарозаменитель</label>
+          <input type="checkbox" id="checkbox2" class="visually-hidden" name="water"><label for="checkbox2" tabindex="0" class="form-program__checkbox checkbox form-program__label">Питьевая вода</label>
+          <input type="checkbox" id="checkbox3" class="visually-hidden" name="milk"><label for="checkbox3" tabindex="0" class="form-program__checkbox checkbox form-program__label">Молоко</label>
+          <input type="checkbox" id="checkbox4" class="visually-hidden" name="vitamin"><label for="checkbox4" tabindex="0" class="form-program__checkbox checkbox form-program__label">Витамины</label>
         </fieldset>
         <button class="form-program__submit-btn button">Отправить заявку</button>
         <p class="form-program__required-fields">* — Обязательные поля</p>
@@ -72,13 +74,13 @@
       </div>
       <div class="contacts__map">
         <!--<iframe src=""></iframe>-->
-        <img src="#" alt="ул. Большая Конюшенная, д. 19/8 г.Санкт-Петербург">
+        <img src="../img/map-pin.png" alt="ул. Большая Конюшенная, д. 19/8 г.Санкт-Петербург" class="contacts__pin">
       </div>
     </section>
   </main>
   <footer class="footer">
     <div class="footer__logo">
-      <a href="index.html"><img src="#" alt="Логотип Кэт Энерджи"></a>
+      <a href="index.html"><img src="../img/logo-footer.svg" alt="Логотип Кэт Энерджи" width="130"></a>
     </div>
     <div class="footer__social social">
       <ul class="social__list">
@@ -88,11 +90,11 @@
       </ul>
     </div>
     <div class="footer__copyright copyright">
-      <a href="https://htmlacademy.ru/intensive/adaptive">
+      <a href="https://htmlacademy.ru/intensive/adaptive" class="copyright__link">
         <div class="copyright__text">HTML Academy</div>
       </a>
       <a href="https://htmlacademy.ru/intensive/adaptive">
-        <div class="copyright__logo"><img src="#" alt="HTML Academy"></div>
+        <div class="copyright__logo"><img src="../img/htmlacademy.svg" alt="HTML Academy" width="27"></div>
       </a>
     </div>
   </footer>

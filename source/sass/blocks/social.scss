@@ -1,0 +1,30 @@
+.social {
+  border-bottom: $border;
+}
+
+.social__list {
+  @include lists;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.social__btn {
+  display: block;
+  width: 30px;
+  height: 30px;
+
+  &--vk {
+    background: url("../img/icon-vk-mobile.svg") no-repeat center center;
+  }
+
+  &--instagram {
+    background: url("../img/icon-insta-mobile.svg") no-repeat center center;
+  }
+
+  &--facebook {
+    background: url("../img/icon-fb-mobile.svg") no-repeat center center;
+  }
+
+}

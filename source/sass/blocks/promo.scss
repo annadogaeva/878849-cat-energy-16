@@ -1,0 +1,24 @@
+.promo {
+  background: $accent url("../img/index-background-mobile@1x.jpg") no-repeat top center;
+  color: white;
+  font: {
+    family: 'Oswald';
+  }
+  padding: 25px 35px;
+  text-align: center;
+  margin-bottom: 20px;
+
+    .promo__banner-heading {
+      @include heading;
+      color: white;
+    }
+
+    .promo__banner-description {
+      font: {
+        size: 14px;
+      }
+      text-transform: uppercase;
+      margin: 0;
+      padding: 0;
+    }
+ }

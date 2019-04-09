@@ -1,0 +1,33 @@
+.example {
+  background-color: $darker;
+  padding: 35px 20px;
+}
+
+.example__heading {
+  @include heading;
+  margin-bottom: 30px;
+}
+
+.example__description {
+  @include zero;
+}
+
+.example__results-list {
+  @include lists;
+  display: flex;
+  margin: 25px 0;
+}
+
+.example__cost {
+  font: {
+    family: "Oswald", "Arial", sans-serif;
+    size: 14px;
+    weight: normal;
+  }
+  color: black;
+  margin: 0;
+  padding: 0;
+  text-transform: uppercase;
+}
+
+

@@ -1,0 +1,12 @@
+.cat-slider__slider-list {
+ @include lists;
+}
+
+.cat-slider__toggle {
+  display: flex;
+}
+
+.cat-slider__toggle-state {
+  @include heading-small;
+  text-transform: uppercase;
+}
