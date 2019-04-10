@@ -1,6 +1,6 @@
 .product {
   border-bottom: $border;
-  padding: $padding;
+  padding: 25px 35px;
 
   &--extra {
     border-bottom: $border-darker;
@@ -17,7 +17,3 @@
   @include heading-small;
   text-transform: uppercase;
 }
-
-
-
-

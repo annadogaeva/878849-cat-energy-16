@@ -25,9 +25,7 @@
     weight: normal;
   }
   color: black;
-  margin: 0;
-  padding: 0;
+
+  @include zero;
   text-transform: uppercase;
 }
-
-

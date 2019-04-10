@@ -1,5 +1,5 @@
 .program {
-  padding: $padding;
+  padding: 25px 35px;
 }
 
 .program__heading {
@@ -14,6 +14,6 @@
   }
   text-transform: uppercase;
   color: black;
-  margin: 0;
-  padding: 0;
+
+  @include zero;
 }

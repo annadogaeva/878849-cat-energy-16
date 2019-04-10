@@ -13,31 +13,28 @@
   display: flex;
   flex-direction: column;
   margin-bottom: 20px;
-
-  .programs__heading {
-    @include heading-medium;
-    text-transform: uppercase;
-    margin-left: 70px;
-    position: relative;
-    padding-bottom: 30px;
-  }
-
-  .programs__description {
-    @include zero;
-    border-bottom: $border;
-    padding-bottom: 25px;
-  }
-
-  .programs__catalog-link {
-     @include heading-small;
-    text: {
-      transform: uppercase;
-      decoration: none;
-    }
-    position: relative;
-    padding-top: 20px;
-  }
-
 }
 
+.programs__heading {
+  @include heading-medium;
+  text-transform: uppercase;
+  margin-left: 70px;
+  position: relative;
+  padding-bottom: 30px;
+}
 
+.programs__description {
+  @include zero;
+  border-bottom: $border;
+  padding-bottom: 25px;
+}
+
+.programs__catalog-link {
+  @include heading-small;
+  text: {
+    transform: uppercase;
+    decoration: none;
+  }
+  position: relative;
+  padding-top: 20px;
+}

@@ -2,8 +2,10 @@
   border: none;
   display: flex;
   flex-direction: column;
+
   @include zero;
   padding: 20px 0;
+
   &--main {
     border-bottom: $border;
   }
@@ -16,8 +18,7 @@
 
 .form-program__section-name {
   @include heading-medium;
-  margin: 0;
-  padding: 0;
+  @include zero;
 }
 
 .form-program__required-fields {
