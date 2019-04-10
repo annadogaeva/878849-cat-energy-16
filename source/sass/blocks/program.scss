@@ -1,0 +1,19 @@
+.program {
+  padding: 25px 35px;
+}
+
+.program__heading {
+  @include heading;
+}
+
+.program__description {
+  font: {
+    family: "Oswald", "Arial", sans-serif;
+    size: 14px;
+    weight: normal;
+  }
+  text-transform: uppercase;
+  color: black;
+
+  @include zero;
+}

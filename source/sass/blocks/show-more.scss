@@ -1,0 +1,11 @@
+.show-more {
+  padding: 25px 35px;
+}
+
+.show-more__info {
+  @include heading-small;
+}
+
+.show-more__description {
+  @include zero;
+}

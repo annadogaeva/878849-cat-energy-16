@@ -1,0 +1,28 @@
+.nav {
+  display: block;
+  background-color: white;
+}
+
+.nav__list {
+  @include lists;
+}
+
+.nav__item {
+  border-bottom: 1px solid #e6e6e6;
+  border-top: $border;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.nav__link {
+  font: {
+    family: "Oswald";
+    size: 20px;
+    weight: 500;
+  }
+  color: black;
+  text-transform: uppercase;
+  text-decoration: none;
+}

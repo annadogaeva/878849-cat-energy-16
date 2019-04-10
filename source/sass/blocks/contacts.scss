@@ -1,0 +1,20 @@
+.contacts__wrapper {
+  display: flex;
+  padding: 35px 20px;
+}
+
+.contacts__invite {
+  @include heading-small;
+  text-transform: uppercase;
+}
+
+.contacts__map {
+  background-image: url("../img/bg-map-mobile@1x.png");
+  position: relative;
+  width: 320px;
+  height: 360px;
+}
+
+.contacts__pin {
+  position: absolute;
+}

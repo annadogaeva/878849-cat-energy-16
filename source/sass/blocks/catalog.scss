@@ -1,0 +1,19 @@
+.catalog__heading {
+  @include heading;
+  padding: 25px 35px;
+}
+
+.catalog__list {
+  @include lists;
+}
+
+.catalog__subheading {
+  @include heading-medium;
+  position: relative;
+  padding: 30px 0;
+}
+
+.catalog__wrapper {
+  margin: 0 auto;
+  width: 97%;
+}

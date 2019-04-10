@@ -1,0 +1,19 @@
+.product {
+  border-bottom: $border;
+  padding: 25px 35px;
+
+  &--extra {
+    border-bottom: $border-darker;
+    border-top: $border-darker;
+    padding: 15px 0;
+  }
+}
+
+.product__wrapper {
+  display: flex;
+}
+
+.product__heading {
+  @include heading-small;
+  text-transform: uppercase;
+}
