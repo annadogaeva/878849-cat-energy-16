@@ -1,3 +1,16 @@
 .promo-banners {
-  padding: 25px 35px;
+  padding: 40px 25px;
+}
+
+@media (min-width: $tablet-width) {
+  .promo-banners {
+    padding: 40px 30px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .promo-banners {
+    margin-left: 80px;
+    padding: 0;
+  }
 }

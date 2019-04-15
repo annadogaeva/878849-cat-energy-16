@@ -1,10 +1,16 @@
 .copyright {
   display: flex;
-  padding-top: 30px;
+  justify-content: space-between;
 }
 
 .copyright__link {
   text-decoration: none;
   color: #444444;
   font-size: 16px;
+}
+
+@media (min-width: $tablet-width) {
+  .copyright__text {
+    margin-top: 10px;
+  }
 }

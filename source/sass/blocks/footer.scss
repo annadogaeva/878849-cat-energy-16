@@ -8,3 +8,27 @@
   border-bottom: $border;
   padding-bottom: 30px;
 }
+
+.footer__copyright {
+  padding-top: 30px;
+}
+
+@media (min-width: $tablet-width) {
+  .footer {
+    .container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+  }
+
+  .footer__logo {
+    border: none;
+
+    @include zero;
+  }
+
+  .footer__copyright {
+    @include zero;
+  }
+}

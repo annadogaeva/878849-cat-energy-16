@@ -5,20 +5,26 @@
   <meta charset="utf-8">
   <link rel="stylesheet" type="text/css" href="css/style.css">
   <title>HTML Academy: Кэт энерджи</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="format-detection" content="telephone=no">
 </head>
 
 <body>
-  <header class="header">
+  <header class="header container">
     <div class="header__wrapper">
-    <div class="header__logo">
-      <a href="#">
-        <img src="img/logo-mobile.svg" width="250" height="66" alt="Логотип Кэт-Энерджи">
-      </a>
+      <div class="header__logo">
+        <a href="#">
+          <picture>
+            <source srcset="img/logo-desktop.svg" type="image/svg+xml" media="(min-width: 1440px)">
+            <source srcset="img/logo-tablet.svg" type="image/svg+xml" media="(min-width: 768px)">
+            <img src="img/logo-mobile.svg" alt="Логотип Кэт-Энерджи" width="202" height="59">
+          </picture>
+        </a>
+      </div>
+      <div class="header__menu-btn">
+        <a href="#"><img src="img/icon-mobile-menu.svg" width="25" height="25" alt="Меню"></a>
+      </div>
     </div>
-    <div class="header__menu-btn">
-      <a href=""><img src="img/icon-mobile-menu.svg" width="25" height="25" alt="Меню"></a>
-    </div>
-  </div>
     <nav class="nav">
       <ul class="nav__list">
         <li class="nav__item"><a href="#" class="nav__link">Главная</a></li>
@@ -29,7 +35,7 @@
     <h1 class="visually-hidden">Кэт Энерджи - магазин функционального питания для котов.</h1>
   </header>
   <main>
-    <section class="promo">
+    <section class="promo container">
       <h2 class="visually-hidden">Предложения</h2>
       <h3 class="promo__banner-heading">
         Функциональное питание для котов
@@ -37,10 +43,9 @@
       <p class="promo__banner-description">
         Занялся собой? Займись котом!
       </p>
-      <img src="img/index-can-mobile@1x.png" width="#" height="#" alt="Кэт Энерджи PRO - Курица">
       <a href="#" class="promo__choose-btn button">Подобрать программу</a>
     </section>
-    <section class="programs">
+    <section class="programs container">
       <h2 class="visually-hidden">Программы</h2>
       <ul class="programs__list">
         <li class="programs__item programs__item--weightloss">
@@ -59,7 +64,7 @@
         </li>
       </ul>
     </section>
-    <section class="about">
+    <section class="about container">
       <h2 class="about__heading">Как это работает</h2>
       <ul class="about__list">
         <li class="about__item">Функциональное питание содержит только полезные питательные вещества.</li>
@@ -69,34 +74,48 @@
       </ul>
     </section>
     <section class="example">
-      <h2 class="example__heading">Живой пример</h2>
-      <p class="example__description">
-        Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.
-      </p>
-      <ul class="example__results-list">
-        <li class="example__result result">
-          <span class="result__count">5 кг</span>
-          <span class="result__descripton">снижение веса</span>
-        </li>
-        <li class="example__result result">
-          <span class="result__count">60 дней</span>
-          <span class="result__descripton">затрачено времени</span>
-        </li>
-      </ul>
-      <p class="example__cost">Затраты на питание: 15 000 руб.</p>
-      <div class="example__cat-slider cat-slider">
-        <ul class="cat-slider__slider-list">
-          <li class="cat-slider__slider-item cat-slider__slider-item--fat-cat">
-            <img src="img/before-mobile@1x.png" width="#" height="#" alt="Кот Борис До">
-          </li>
-          <li class="cat-slider__slider-item cat-slider__slider-item--thin-cat">
-            <img src="img/after-mobile@1x.png" width="#" height="#" alt="Кот Борис После">
-          </li>
-        </ul>
-        <div class="cat-slider__toggle">
-          <span class="cat-slider__toggle-state">Было</span>
-          <div class="cat-slider__toggle-bar">#</div>
-          <span class="cat-slider__toggle-state">Стало</span>
+      <div class="container">
+        <div>
+          <h2 class="example__heading">Живой пример</h2>
+          <p class="example__description">
+            Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.
+          </p>
+          <div class="example__wrapper">
+            <ul class="example__results-list">
+              <li class="example__result result">
+                <span class="result__count">5 кг</span>
+                <span class="result__descripton">снижение веса</span>
+              </li>
+              <li class="example__result result">
+                <span class="result__count">60 дней</span>
+                <span class="result__descripton">затрачено времени</span>
+              </li>
+            </ul>
+            <p class="example__cost">Затраты на питание: 15 000 руб.</p>
+          </div>
+        </div>
+        <div class="example__cat-slider cat-slider">
+          <ul class="cat-slider__slider-list">
+            <li class="cat-slider__slider-item cat-slider__slider-item--fat-cat">
+              <picture>
+                <source srcset="img/before-desktop@1x.png" media="(min-width: 1440px)">
+                <source srcset="img/before-tablet@1x.png" media="(min-width: 768px)">
+                <img src="img/before-mobile@1x.png" width="#" height="#" alt="Кот Борис До">
+              </picture>
+            </li>
+            <li class="cat-slider__slider-item cat-slider__slider-item--thin-cat">
+              <picture>
+                <source srcset="img/after-desktop@1x.png" type="image/svg+xml" media="(min-width: 1440px)">
+                <source srcset="img/after-tablet@1x.png" type="image/svg+xml" media="(min-width: 768px)">
+                <img src="img/after-mobile@1x.png" width="#" height="#" alt="Кот Борис После">
+              </picture>
+            </li>
+          </ul>
+          <div class="cat-slider__toggle">
+            <span class="cat-slider__toggle-state">Было</span>
+            <div class="cat-slider__toggle-bar">#</div>
+            <span class="cat-slider__toggle-state">Стало</span>
+          </div>
         </div>
       </div>
     </section>
@@ -113,23 +132,27 @@
     </section>
   </main>
   <footer class="footer">
-    <div class="footer__logo">
-      <a href="#"><img src="img/logo-footer.svg" alt="Логотип Кэт Энерджи" width="130"></a>
-    </div>
-    <div class="footer__social social">
-      <ul class="social__list">
-        <li class="social__item"><a href="#" class="social__btn social__btn--vk"><span class="visually-hidden">Вконтакте</span></a></li>
-        <li class="social__item"><a href="#" class="social__btn social__btn--instagram"><span class="visually-hidden">Инстаграм</span></a></li>
-        <li class="social__item"><a href="#" class="social__btn social__btn--facebook"><span class="visually-hidden">Фейсбук</span></a></li>
-      </ul>
-    </div>
-    <div class="footer__copyright copyright">
-      <a href="https://htmlacademy.ru/intensive/adaptive" class="copyright__link">
-        <div class="copyright__text">HTML Academy</div>
-      </a>
-      <a href="https://htmlacademy.ru/intensive/adaptive">
-        <div class="copyright__logo"><img src="img/htmlacademy.svg" alt="HTML Academy" width="27"></div>
-      </a>
+    <div class="container">
+      <div class="footer__logo">
+        <a href="#">
+          <img src="img/logo-footer.svg" alt="Логотип Кэт Энерджи" width="130">
+        </a>
+      </div>
+      <div class="footer__social social">
+        <ul class="social__list">
+          <li class="social__item"><a href="#" class="social__btn social__btn--vk"><span class="visually-hidden">Вконтакте</span></a></li>
+          <li class="social__item"><a href="#" class="social__btn social__btn--instagram"><span class="visually-hidden">Инстаграм</span></a></li>
+          <li class="social__item"><a href="#" class="social__btn social__btn--facebook"><span class="visually-hidden">Фейсбук</span></a></li>
+        </ul>
+      </div>
+      <div class="footer__copyright copyright">
+        <a href="https://htmlacademy.ru/intensive/adaptive" class="copyright__link">
+          <div class="copyright__text">HTML Academy</div>
+        </a>
+        <a href="https://htmlacademy.ru/intensive/adaptive">
+          <div class="copyright__logo"><img src="img/htmlacademy.svg" alt="HTML Academy" width="27"></div>
+        </a>
+      </div>
     </div>
   </footer>
 </body>

@@ -26,3 +26,32 @@
   text-transform: uppercase;
   text-decoration: none;
 }
+
+@media (min-width: $tablet-width) {
+  .nav__list {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .nav__item {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    border: none;
+  }
+
+  .nav__link {
+    font-size: 18px;
+    font-weight: normal;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .nav {
+    background-color: $accent;
+  }
+
+  .nav__link {
+    color: white;
+    font-weight: normal;
+  }
+}

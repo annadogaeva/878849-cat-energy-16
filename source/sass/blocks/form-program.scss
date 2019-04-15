@@ -4,23 +4,167 @@
   flex-direction: column;
 
   @include zero;
-  padding: 20px 0;
+  padding: 20px 0 0 0;
 
   &--main {
     border-bottom: $border;
   }
 }
 
+.form-program__wrapper--field {
+  display: flex;
+  align-items: center;
+}
+
 .form-program__label {
   @include heading-small;
   text-transform: uppercase;
+  margin-right: 15px;
+  margin-bottom: 20px;
+  display: block;
 }
 
 .form-program__section-name {
   @include heading-medium;
   @include zero;
+  padding: 30px 0;
 }
 
 .form-program__required-fields {
   text-align: center;
+}
+
+.form-program__textarea {
+  width: 100%;
+  min-height: 145px;
+  resize: none;
+  padding: 10px 15px;
+}
+
+.form-program__textarea::placeholder {
+  @include heading-small;
+  color: #444444;
+  text-transform: uppercase;
+}
+
+.form-program__text {
+  flex-grow: 1;
+  margin-bottom: 15px;
+}
+
+@media (min-width: $tablet-width) {
+  .form-program {
+    padding: 0 40px;
+  }
+
+  .form-program__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+
+    &--main {
+      display: block;
+    }
+
+    &--contacts {
+      display: block;
+    }
+  }
+
+  .form-program__section {
+    margin-bottom: 70px;
+
+    &--main {
+      border: none;
+    }
+
+    &--radio {
+      border: $border;
+      padding: 20px 30px;
+    }
+  }
+
+  .form-program__section-name {
+    font-size: 36px;
+  }
+
+  .form-program__label {
+    font-size: 20px;
+  }
+
+  .form-program__checkbox {
+    width: 40%;
+    margin-top: 45px;
+  }
+
+  .form-program__text {
+    margin-bottom: 20px;
+  }
+
+  .form-program__submit-btn {
+    width: 280px;
+  }
+
+  .form-program__required-fields {
+    text-align: left;
+    margin-left: 60px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form-program {
+    padding: 0;
+  }
+
+  .form-program__section {
+    min-width: 570px;
+    padding-top: 0;
+    margin-bottom: 60px;
+
+    &--main {
+      min-height: 195px;
+    }
+
+    &--radio {
+      padding-top: 20px;
+      margin-left: 80px;
+    }
+  }
+
+  .form-program__section-name {
+    padding-top: 0;
+  }
+
+  .form-program__email {
+    flex-grow: 1;
+  }
+
+  .form-program__phone {
+    flex-grow: 1;
+    margin-left: 80px;
+  }
+
+  .form-program__wrapper {
+    &--main {
+      display: flex;
+      align-items: flex-start;
+    }
+
+    &--contacts {
+      display: flex;
+    }
+
+    &--extra {
+      flex-wrap: nowrap;
+      align-items: flex-start;
+    }
+  }
+
+
+  .form-program__submit-btn {
+    width: 570px;
+  }
+
+  .form-program__required-fields {
+    margin-left: 80px;
+  }
 }

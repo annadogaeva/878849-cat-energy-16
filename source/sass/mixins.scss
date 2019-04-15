@@ -1,0 +1,54 @@
+@mixin heading-large {
+  font: {
+    family: "Oswald", "Arial", sans-serif;
+    size: 60px;
+    weight: normal;
+  }
+  color: black;
+  margin: 0;
+  padding: 0;
+}
+
+@mixin heading {
+  font: {
+    family: "Oswald", "Arial", sans-serif;
+    size: 36px;
+    weight: normal;
+  }
+  color: black;
+  margin: 0;
+  padding: 0;
+}
+
+@mixin heading-medium {
+  font: {
+    family: "Oswald", "Arial", sans-serif;
+    size: 24px;
+    weight: normal;
+  }
+  color: black;
+  margin: 0;
+  padding: 0;
+}
+
+@mixin heading-small {
+  font: {
+    family: "Oswald", "Arial", sans-serif;
+    size: 16px;
+    weight: normal;
+  }
+  color: black;
+  margin: 0;
+  padding: 0;
+}
+
+@mixin lists {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+@mixin zero {
+  margin: 0;
+  padding: 0;
+}
