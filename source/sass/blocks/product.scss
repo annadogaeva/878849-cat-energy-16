@@ -1,12 +1,6 @@
 .product {
   border-bottom: $border;
-  padding: 25px 35px;
-
-  &--extra {
-    border-bottom: $border-darker;
-    border-top: $border-darker;
-    padding: 15px 0;
-  }
+  padding: 30px 20px;
 }
 
 .product__wrapper {
@@ -16,4 +10,45 @@
 .product__heading {
   @include heading-small;
   text-transform: uppercase;
+  width: 85px;
+  margin-bottom: 15px;
+}
+
+@media (min-width: $tablet-width) {
+  .product {
+    width: 325px;
+    min-height: 430px;
+    background-color: $darker;
+    border: none;
+    position: relative;
+    padding-top: 150px;
+  }
+
+  .product__content {
+    width: 100%;
+  }
+
+  .product__img {
+    position: absolute;
+    bottom: 70%;
+    left: 0;
+  }
+
+  .product__heading {
+    width: 130px;
+    font-size: 20px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  .product__btn {
+    margin-top: auto;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .product {
+    width: 245px;
+  }
 }

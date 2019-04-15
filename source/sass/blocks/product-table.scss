@@ -1,7 +1,47 @@
+.product-table {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
 .product-table__cell:first-child {
   text-align: left;
 }
 
 .product-table__cell:last-child {
   text-align: right;
+}
+
+@media (min-width: $tablet-width) {
+  .product-table__cell {
+    border: none;
+    border-bottom: $border;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  .product-extra {
+    .product-table__cell {
+      border: none;
+      text-align: right;
+    }
+
+    .product-table__cell--price {
+      width: 90px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .product-extra {
+    .product-table {
+      margin: 0;
+      width: 285px;
+    }
+
+    .product-table__cell {
+      padding: 0;
+      border: none;
+      text-align: left;
+    }
+  }
 }

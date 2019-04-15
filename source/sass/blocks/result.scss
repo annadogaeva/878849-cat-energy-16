@@ -2,14 +2,32 @@
   border: $border;
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
   text-align: center;
   border-radius: 3px;
+  width: 125px;
+  height: 55px;
 }
 
 .result__count {
   @include heading-medium;
+  text-transform: uppercase;
 }
 
 .result__descripton {
   font-size: 12px;
+}
+
+@media (min-width: $tablet-width) {
+  .result__count {
+    font-size: 30px;
+  }
+}
+
+
+@media (min-width: $desktop-width) {
+  .result {
+    width: 162px;
+  }
 }

@@ -1,96 +1,7 @@
-@font-face {
-  font-family: "Oswald";
-  src: url("../fonts/oswaldregular.woff") format("woff"),
-    url("../fonts/oswaldregular.woff2") format("woff2");
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "Oswald";
-  src: url("../fonts/oswaldmedium.woff") format("woff"),
-    url("../fonts/oswaldmedium.woff2") format("woff2");
-  font-weight: 500;
-  font-style: normal;
-}
-
-$accent: #68b738;
-$darker: #f2f2f2;
-$border: 1px solid #d9d9d9;
-$border-darker: 1px solid #cdcdcd;
-$padding: 35px 20px;
-
-@mixin heading {
-  font: {
-    family: "Oswald", "Arial", sans-serif;
-    size: 36px;
-    weight: normal;
-  }
-  color: black;
-  margin: 0;
-  padding: 0;
-}
-
-@mixin heading-medium {
-  font: {
-    family: "Oswald", "Arial", sans-serif;
-    size: 24px;
-    weight: normal;
-  }
-  color: black;
-  margin: 0;
-  padding: 0;
-}
-
-@mixin heading-small {
-  font: {
-    family: "Oswald", "Arial", sans-serif;
-    size: 16px;
-    weight: normal;
-  }
-  color: black;
-  margin: 0;
-  padding: 0;
-}
-
-@mixin lists {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-@mixin zero {
-  margin: 0;
-  padding: 0;
-}
-
-*,
-*::before,
-*::after {
-  box-sizing: inherit;
-}
-
-html {
-  box-sizing: border-box;
-}
-
-body {
-  margin: 0;
-  font-family: "Arial", sans-serif;
-  font-size: 14px;
-  color: #444444;
-}
-
-.visually-hidden {
-  position: absolute;
-  clip: rect(0 0 0 0);
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-}
-
-
+@import "mixins.scss";
+@import "variables.scss";
 @import "normalize.scss";
+@import "scaffolding.scss";
 @import "blocks/button.scss";
 @import "blocks/header.scss";
 @import "blocks/nav.scss";
@@ -106,9 +17,11 @@ body {
 @import "blocks/copyright.scss";
 @import "blocks/catalog.scss";
 @import "blocks/product.scss";
+@import "blocks/product-extra.scss";
 @import "blocks/product-table.scss";
 @import "blocks/show-more.scss";
 @import "blocks/promo-banners.scss";
 @import "blocks/banner.scss";
 @import "blocks/program.scss";
 @import "blocks/form-program.scss";
+@import "blocks/input-text.scss";

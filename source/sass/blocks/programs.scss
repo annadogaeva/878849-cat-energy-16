@@ -38,3 +38,46 @@
   position: relative;
   padding-top: 20px;
 }
+
+@media (min-width: $tablet-width) {
+  .programs__item {
+    padding: 80px 50px 60px 50px;
+  }
+
+  .programs__heading {
+    @include heading;
+    margin-bottom: 20px;
+  }
+
+  .programs__description {
+    width: 390px;
+    font-size: 16px;
+    line-height: 24px;
+    border: none;
+  }
+
+  .programs__catalog-link {
+    font-size: 20px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .programs {
+    margin-bottom: 130px;
+  }
+
+  .programs__list {
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+  }
+
+  .programs__item {
+    width: 570px;
+  }
+
+  .programs__heading {
+    margin-left: 165px;
+    margin-bottom: 80px;
+  }
+}

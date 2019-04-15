@@ -1,9 +1,10 @@
 .program {
-  padding: 25px 35px;
+  padding: 30px 25px;
 }
 
 .program__heading {
   @include heading;
+  margin-bottom: 40px;
 }
 
 .program__description {
@@ -16,4 +17,33 @@
   color: black;
 
   @include zero;
+  margin-bottom: 40px;
+}
+
+@media (min-width: $tablet-width) {
+  .program {
+    padding: 60px 30px;
+  }
+
+  .program__heading {
+    font-size: 60px;
+  }
+
+  .program__description {
+    font-size: 20px;
+    margin-left: 40px;
+    width: 348px;
+    line-height: 30px;
+    margin-bottom: 70px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .program {
+    padding: 60px 0;
+  }
+
+  .program__description {
+    margin-left: 0;
+  }
 }

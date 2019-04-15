@@ -1,0 +1,10 @@
+.input-text {
+  height: 45px;
+  border: $border;
+}
+
+@media (min-width: $desktop-width) {
+  .input-text {
+    height: 51px;
+  }
+}

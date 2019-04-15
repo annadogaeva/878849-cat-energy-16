@@ -2,6 +2,11 @@
   @include lists;
 }
 
+.cat-slider__slider-item {
+  margin: 0 auto;
+  text-align: center;
+}
+
 .cat-slider__toggle {
   display: flex;
 }
@@ -9,4 +14,14 @@
 .cat-slider__toggle-state {
   @include heading-small;
   text-transform: uppercase;
+}
+
+.cat-slider__slider-item--thin-cat {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .cat-slider {
+    text-align: center;
+  }
 }

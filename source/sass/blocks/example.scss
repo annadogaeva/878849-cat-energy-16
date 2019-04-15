@@ -15,7 +15,9 @@
 .example__results-list {
   @include lists;
   display: flex;
-  margin: 25px 0;
+  margin: 25px auto;
+  justify-content: space-between;
+  width: 280px;
 }
 
 .example__cost {
@@ -28,4 +30,72 @@
 
   @include zero;
   text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+@media (min-width: $tablet-width) {
+  .example {
+    padding: 35px 30px;
+    background-image: linear-gradient(white 60%, $darker 50%);
+  }
+
+  .example__heading {
+    @include heading-large;
+    margin-bottom: 70px;
+  }
+
+  .example__description {
+    margin-bottom: 60px;
+  }
+
+  .example__wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .example__results-list {
+    @include zero;
+  }
+
+  .example__cost {
+    text-align: right;
+    width: 190px;
+    font-size: 20px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .example {
+    background-image: linear-gradient(white 30%, $darker 30%);
+
+    .container {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+
+  .example__wrapper {
+    display: block;
+  }
+
+  .example__heading {
+    margin-bottom: 140px;
+  }
+
+  .example__description {
+    width: 450px;
+  }
+
+  .example__results-list {
+    width: 365px;
+    min-height: 75px;
+    justify-content: space-between;
+    margin-bottom: 65px;
+  }
+
+  .example__cost {
+    width: 325px;
+    text-align: left;
+  }
 }

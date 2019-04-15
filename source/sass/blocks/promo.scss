@@ -1,5 +1,8 @@
 .promo {
-  background: $accent url("../img/index-background-mobile@1x.jpg") no-repeat top center;
+  background-color: #65a93c;
+  background-image: url("../img/index-can-mobile@1x.png"), url("../img/index-background-mobile@1x.jpg"), linear-gradient(#65a93c 64%, white 50%);
+  background-repeat: no-repeat;
+  background-position: center 70%, top center;
   color: white;
   font: {
     family: "Oswald";
@@ -7,11 +10,13 @@
   padding: 25px 35px;
   text-align: center;
   margin-bottom: 20px;
+  min-height: 480px;
 }
 
 .promo__banner-heading {
   @include heading;
   color: white;
+  margin-bottom: 25px;
 }
 
 .promo__banner-description {
@@ -21,4 +26,45 @@
   text-transform: uppercase;
 
   @include zero;
+}
+
+.promo__choose-btn {
+  margin-top: 300px;
+}
+
+@media (min-width: $tablet-width) {
+  .promo {
+    background-color: white;
+    background-image: url("../img/index-can-tablet@1x.jpg");
+    color: black;
+    padding-left: 120px;
+    padding-right: 120px;
+    min-height: 670px;
+  }
+
+  .promo__banner-heading {
+    color: black;
+    width: 430px;
+    text-align: left;
+    margin-bottom: 40px;
+    font-size: 60px;
+  }
+
+  .promo__banner-description {
+    text-align: left;
+    margin-bottom: 40px;
+  }
+
+  .promo__choose-btn {
+    width: 245px;
+    margin-top: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .promo {
+    background-image: url("../img/index-can-desktop@1x.png");
+    padding-left: 85px;
+    padding-right: 85px;
+  }
 }

@@ -1,4 +1,55 @@
 .banner {
   background: $accent url("../img/gift-photo-mobile@1x.jpg") no-repeat;
   color: white;
+  min-height: 290px;
+  text-align: center;
+  padding: 40px;
+}
+
+.banner__img {
+  margin-bottom: 70px;
+}
+
+.banner__info {
+  width: 130px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+@media (min-width: $tablet-width) {
+  .banner {
+    background: $accent url("../img/gift-photo-tablet@1x.jpg") no-repeat center center;
+    background-size: cover;
+    color: white;
+    width: 100%;
+    min-height: 200px;
+    text-align: center;
+    padding: 50px 90px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .banner__img {
+    @include zero;
+  }
+
+  .banner__info {
+    @include zero;
+    text-align: left;
+    width: 160px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .banner {
+    width: 245px;
+    min-height: 282px;
+    background: $accent url("../img/gift-photo-desktop@1x.jpg") no-repeat center center;
+    flex-direction: column;
+  }
+
+  .banner__info {
+    text-align: center;
+  }
 }

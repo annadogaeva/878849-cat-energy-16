@@ -27,3 +27,9 @@
     background: url("../img/icon-fb-mobile.svg") no-repeat center center;
   }
 }
+
+@media (min-width: $tablet-width) {
+  .social {
+    border: none;
+  }
+}

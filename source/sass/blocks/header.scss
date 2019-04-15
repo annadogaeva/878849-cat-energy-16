@@ -3,5 +3,19 @@
 }
 
 .header__wrapper {
+  align-items: center;
+  justify-content: space-around;
   display: flex;
+}
+
+
+@media (min-width: $tablet-width) {
+  .header {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .header__menu-btn {
+    display: none;
+  }
 }

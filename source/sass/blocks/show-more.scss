@@ -1,11 +1,46 @@
 .show-more {
-  padding: 25px 35px;
+  padding: 30px 20px;
+  text-align: center;
+  min-height: 210px;
+  border-bottom: $border;
+}
+
+.show-more__plus-btn {
+  display: block;
+  margin-bottom: 30px;
 }
 
 .show-more__info {
   @include heading-small;
+  text-transform: uppercase;
+  margin-bottom: 10px;
 }
 
 .show-more__description {
   @include zero;
+  margin-bottom: 25px;
+}
+
+@media (min-width: $tablet-width) {
+  .show-more {
+    border: $border;
+    margin-bottom: 140px;
+    width: 325px;
+  }
+
+  .show-more__btn {
+    margin-top: auto;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .show-more {
+    width: 245px;
+  }
+
+  .show-more__info {
+    font-size: 20px;
+    width: 150px;
+    margin: 0 auto 30px auto;
+  }
 }

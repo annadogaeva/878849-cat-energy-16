@@ -1,6 +1,8 @@
 .contacts__wrapper {
-  display: flex;
+  justify-content: space-between;
   padding: 35px 20px;
+  background-color: white;
+  display: flex;
 }
 
 .contacts__invite {
@@ -11,10 +13,65 @@
 .contacts__map {
   background-image: url("../img/bg-map-mobile@1x.png");
   position: relative;
-  width: 320px;
-  height: 360px;
+  width: 100%;
+  min-height: 360px;
+  background-size: cover;
 }
 
 .contacts__pin {
   position: absolute;
+  top: 130px;
+  right: 90px;
+}
+
+.contacts--inner {
+  background-color: $darker;
+}
+
+@media (min-width: $tablet-width) {
+  .contacts__wrapper {
+    min-height: 200px;
+    padding: 70px;
+  }
+
+
+  .contacts__invite {
+    font-size: 20px;
+    width: 130px;
+  }
+
+  .contacts__address {
+    text-align: right;
+    width: 160px;
+  }
+
+  .contacts__map {
+    background-image: url("../img/bg-map-tablet@1x.png");
+    width: 100%;
+    min-height: 395px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .contacts {
+    position: relative;
+  }
+
+  .contacts__map {
+    background-image: url("../img/bg-map-desktop@1x.png");
+  }
+
+  .contacts__wrapper {
+    width: 570px;
+    min-height: 200px;
+    position: absolute;
+    z-index: 2;
+    left: 110px;
+    top: 95px;
+  }
+
+  .contacts__pin {
+    top: 150px;
+    right: 400px;
+  }
 }
