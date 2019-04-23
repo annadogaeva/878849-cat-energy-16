@@ -11,8 +11,28 @@
   border: none;
   width: 100%;
 
-  &--light {
-    background-color: #cdcdcd;
-    color: #444444;
+  &:hover,
+  &:focus {
+    background-color: #5eaa2f;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+    background-color: #5eaa2f;
+  }
+}
+
+.button--light {
+  background-color: #cdcdcd;
+  color: #444444;
+
+  &:hover,
+  &:focus {
+    background-color: #ebebeb;
+  }
+
+  &:active {
+    background-color: #ebebeb;
+    color: rgba(255, 255, 255, 0.3);
   }
 }

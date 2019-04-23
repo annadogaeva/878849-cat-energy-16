@@ -42,16 +42,36 @@
   .nav__link {
     font-size: 18px;
     font-weight: normal;
+    padding-bottom: 10px;
+
+    &--current,
+    &--currentindex {
+      border-bottom: 2px solid $accent;
+    }
   }
 }
 
 @media (min-width: $desktop-width) {
   .nav {
-    background-color: $accent;
+    background-color: transparent;
   }
 
   .nav__link {
-    color: white;
+    color: black;
     font-weight: normal;
+
+    &--index {
+      color: white;
+      border-color: white;
+    }
+
+    &:hover,
+    &:focus {
+      opacity: 0.6;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
   }
 }

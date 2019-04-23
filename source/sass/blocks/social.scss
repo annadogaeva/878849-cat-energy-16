@@ -5,9 +5,10 @@
 .social__list {
   @include lists;
   display: flex;
-  justify-content: center;
   align-items: center;
-  padding: 20px;
+  min-height: 60px;
+  width: 130px;
+  margin: 0 auto;
 }
 
 .social__btn {
@@ -17,19 +18,51 @@
 
   &--vk {
     background: url("../img/icon-vk-mobile.svg") no-repeat center center;
+    width: 25px;
+    height: 15px;
   }
 
   &--instagram {
     background: url("../img/icon-insta-mobile.svg") no-repeat center center;
+    width: 18px;
+    height: 18px;
+    margin-left: 30px;
   }
 
   &--facebook {
     background: url("../img/icon-fb-mobile.svg") no-repeat center center;
+    width: 10px;
+    height: 20px;
+    margin-left: 38px;
+  }
+
+  &:active {
+    opacity: 0.3;
   }
 }
 
 @media (min-width: $tablet-width) {
   .social {
     border: none;
+  }
+
+  .social__btn {
+    &--vk {
+      width: 30px;
+      height: 15px;
+      margin-left: 10px;
+    }
+
+    &--instagram {
+      width: 25px;
+      height: 25px;
+      margin-left: 30px;
+    }
+
+    &--facebook {
+      width: 15px;
+      height: 30px;
+      margin-left: 30px;
+    }
   }
 }

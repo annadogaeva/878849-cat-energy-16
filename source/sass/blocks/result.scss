@@ -8,6 +8,7 @@
   border-radius: 3px;
   width: 125px;
   height: 55px;
+  position: relative;
 }
 
 .result__count {
@@ -17,17 +18,37 @@
 
 .result__descripton {
   font-size: 12px;
+  position: absolute;
+  background-color: $darker;
+  top: 84%;
+  display: inline-block;
+  vertical-align: middle;
+  padding: 0 4%;
+  max-width: 85px;
 }
 
 @media (min-width: $tablet-width) {
+  .result {
+    width: 165px;
+    height: 75px;
+  }
+
   .result__count {
     font-size: 30px;
+  }
+
+  .result__descripton {
+    padding: 0 4%;
+    top: 90%;
+    font-size: 14px;
+    background-color: white;
+    max-width: 100%;
   }
 }
 
 
 @media (min-width: $desktop-width) {
-  .result {
-    width: 162px;
+  .result__descripton {
+    background-color: $darker;
   }
 }

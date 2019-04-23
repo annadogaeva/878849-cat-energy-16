@@ -14,7 +14,7 @@
     <div class="header__wrapper">
       <div class="header__logo">
         <a href="index.html">
-          <picture>
+          <picture class="header__logo-img">
             <source srcset="img/logo-desktop.svg" type="image/svg+xml" media="(min-width: 1440px)">
             <source srcset="img/logo-tablet.svg" type="image/svg+xml" media="(min-width: 768px)">
             <img src="img/logo-mobile.svg" alt="Логотип Кэт-Энерджи" width="202" height="59">
@@ -24,11 +24,14 @@
       <div class="header__menu-btn">
         <a href=""><img src="img/icon-mobile-menu.svg" width="25" height="25" alt="Меню"></a>
       </div>
+      <div class="header__close-btn">
+        <a href="#"><img src="img/icon-close.svg" width="25" height="25" alt="Закрыть"></a>
+      </div>
     </div>
     <nav class="nav">
       <ul class="nav__list">
         <li class="nav__item"><a href="index.html" class="nav__link">Главная</a></li>
-        <li class="nav__item"><a href="catalog.html" class="nav__link">Каталог продукции</a></li>
+        <li class="nav__item"><a href="catalog.html" class="nav__link nav__link--current">Каталог продукции</a></li>
         <li class="nav__item"><a href="form.html" class="nav__link">Подбор программы</a></li>
       </ul>
     </nav>
@@ -230,7 +233,17 @@
             <a class="product__btn button" href="#">Заказать</a>
           </li>
           <li class="catalog__item show-more">
-            <a href="#" class="show-more__plus-btn">+</a>
+            <a href="#" class="show-more__plus-link">
+                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 60 60" style="enable-background:new 0 0 60 60;" xml:space="preserve" width="30px" class="show-more__plus-btn">
+                  <style type="text/css">
+                    .st0 {
+                      fill: #231F20;
+                    }
+                  </style>
+                  <polygon class="st0" points="60,29.5 30.5,29.5 30.5,0 29.5,0 29.5,29.5 0,29.5 0,30.5 29.5,30.5 29.5,60 30.5,60 30.5,30.5
+                  60,30.5 "/>
+                </svg>
+            </a>
             <p class="show-more__info">
               Показать еще 100500 товаров
             </p>
@@ -243,8 +256,10 @@
       </section>
       <div class="catalog__extra-wrapper">
         <section class="catalog__extra-products catalog__wrapper">
-          <h3 class="catalog__subheading">Дополнительные товары</h3>
-          <ul class="catalog__list">
+          <h3 class="catalog__subheading">
+            <span class="catalog__subheading-text">Дополнительные товары</span>
+            </h3>
+          <ul class="catalog__list catalog__list--extra">
             <li class="catalog__item product-extra">
               <div class="product-extra__wrapper">
                 <div class="product-extra__wrapper product-extra__wrapper--table">
@@ -312,15 +327,15 @@
         </section>
     </section>
     </div>
-    <section class="contacts contacts--inner">
+    <section class="contacts">
       <h2 class="visually-hidden">Контактная информация</h2>
-      <div class="contacts__wrapper">
+      <div class="contacts__wrapper contacts__wrapper--inner">
         <div class="contacts__invite">Приглашаем к сотрудничеству дилеров!</div>
         <div class="contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</div>
       </div>
       <div class="contacts__map">
         <!--<iframe src=""></iframe>-->
-        <img src="img/map-pin.png" alt="ул. Большая Конюшенная, д. 19/8 г.Санкт-Петербург" class="contacts__pin">
+        <img src="img/map-pin.png" alt="ул. Большая Конюшенная, д. 19/8 г.Санкт-Петербург" class="contacts__pin"  width="60" height="55">
       </div>
     </section>
   </main>

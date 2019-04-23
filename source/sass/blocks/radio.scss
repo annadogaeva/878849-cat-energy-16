@@ -1,0 +1,45 @@
+.radio + label::before {
+  content: "";
+  width: 30px;
+  height: 30px;
+  background-color: white;
+  display: inline-block;
+  vertical-align: middle;
+  border-radius: 50%;
+  border: 1px solid rgba(207, 207, 207, 0.5);
+  margin-right: 15px;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    border: 1px solid #cdcdcd;
+  }
+
+  &:disabled {
+    opacity: 0.3;
+  }
+}
+
+.radio:checked + label::before {
+  content: "";
+  background: radial-gradient(ellipse at center, $accent 0%, $accent 30%, white 30%, white 100%);
+  vertical-align: middle;
+  border-radius: 50%;
+  border: 1px solid rgba(207, 207, 207, 0.5);
+
+  &:hover,
+  &:focus {
+    border: 1px solid #cdcdcd;
+  }
+
+  &:disabled {
+    opacity: 0.3;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .radio + label::before {
+    width: 40px;
+    height: 40px;
+  }
+}

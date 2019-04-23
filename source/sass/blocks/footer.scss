@@ -1,20 +1,35 @@
 .footer {
   background-color: $darker;
-  padding: 25px 35px;
+  padding: 40px 20px 35px 20px;
   text-align: center;
 }
 
 .footer__logo {
   border-bottom: $border;
   padding-bottom: 30px;
+
+  &:hover,
+  &:focus {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
 }
 
 .footer__copyright {
-  padding-top: 30px;
+  padding-top: 18px;
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 @media (min-width: $tablet-width) {
   .footer {
+    padding: 50px 25px 35px 30px;
+
     .container {
       display: flex;
       align-items: center;

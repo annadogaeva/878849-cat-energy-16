@@ -9,7 +9,20 @@
   &--main {
     border-bottom: $border;
   }
+
+  &--radio {
+    padding-top: 25px;
+  }
+
+  &--contacts {
+    margin-bottom: -20px;
+  }
 }
+
+.form-program__wrapper--extra {
+  margin-top: 8px;
+}
+
 
 .form-program__wrapper--field {
   display: flex;
@@ -20,25 +33,53 @@
   @include heading-small;
   text-transform: uppercase;
   margin-right: 15px;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
   display: block;
+  white-space: nowrap;
 }
 
 .form-program__section-name {
+  z-index: 2;
+  position: relative;
+  display: block;
+  margin: 0;
+  width: 100%;
+
+  &::before {
+    content: "";
+    background-color: $accent;
+    width: 100%;
+    height: 4px;
+    z-index: -1;
+    position: absolute;
+    right: -6%;
+    top: calc(70% - 4px);
+  }
+}
+
+.form-program__section-text {
   @include heading-medium;
   @include zero;
-  padding: 30px 0;
+  padding: 30px 20px 10px 0;
+  display: inline-block;
+  vertical-align: middle;
+  max-width: 210px;
+  background-color: white;
+  line-height: 25px;
 }
 
 .form-program__required-fields {
   text-align: center;
+  margin-top: 20px;
+  margin-bottom: 0;
 }
 
 .form-program__textarea {
   width: 100%;
   min-height: 145px;
   resize: none;
-  padding: 10px 15px;
+  padding: 10px 13px;
+  margin-top: 8px;
 }
 
 .form-program__textarea::placeholder {
@@ -50,6 +91,10 @@
 .form-program__text {
   flex-grow: 1;
   margin-bottom: 15px;
+}
+
+.form-program__submit-btn {
+  margin-top: 10px;
 }
 
 @media (min-width: $tablet-width) {
@@ -68,6 +113,14 @@
     &--contacts {
       display: block;
     }
+
+    &--extra {
+      margin-top: -15px;
+      margin-right: -30px;
+      overflow: hidden;
+      display: flex;
+      justify-content: space-between;
+    }
   }
 
   .form-program__section {
@@ -75,25 +128,62 @@
 
     &--main {
       border: none;
+      margin-bottom: 55px;
     }
 
     &--radio {
       border: $border;
-      padding: 20px 30px;
+      padding: 25px 30px 0 27px;
+      min-height: 195px;
+    }
+
+    &--contacts {
+      margin-bottom: 20px;
+    }
+
+    &--comment {
+      margin-bottom: 35px;
+    }
+
+    &--extra {
+      margin-bottom: 0;
     }
   }
 
   .form-program__section-name {
+    margin-bottom: 50px;
+
+    &::before {
+      width: 125%;
+      left: -12%;
+    }
+  }
+
+  .form-program__section-text {
     font-size: 36px;
+    max-width: 600px;
+    margin-left: -40px;
+    padding-left: 40px;
+    padding-right: 40px;
   }
 
   .form-program__label {
     font-size: 20px;
+    margin-right: 60px;
   }
 
   .form-program__checkbox {
-    width: 40%;
-    margin-top: 45px;
+    width: 37%;
+    margin-bottom: 30px;
+    margin-right: 80px;
+  }
+
+  .form-program__textarea {
+    min-height: 175px;
+  }
+
+  .form-program__textarea::placeholder {
+    font-size: 20px;
   }
 
   .form-program__text {
@@ -102,11 +192,15 @@
 
   .form-program__submit-btn {
     width: 280px;
+    margin-top: 25px;
+    height: 50px;
+    font-size: 20px;
   }
 
   .form-program__required-fields {
     text-align: left;
-    margin-left: 60px;
+    margin-left: 65px;
+    margin-top: 40px;
   }
 }
 
@@ -122,16 +216,41 @@
 
     &--main {
       min-height: 195px;
+      margin-bottom: 30px;
     }
 
     &--radio {
       padding-top: 20px;
       margin-left: 80px;
     }
+
+    &--contacts {
+      margin-bottom: 25px;
+    }
+
+    &--comment {
+      margin-bottom: 45px;
+    }
+
+    &--extra {
+      margin-bottom: 0;
+    }
   }
 
   .form-program__section-name {
     padding-top: 0;
+    margin-right: 20px;
+
+    &::before {
+      width: 120%;
+      left: -10%;
+    }
+  }
+
+  .form-program__section-text {
+    padding-left: 40px;
+    padding-right: 40px;
+    margin-left: -40px;
   }
 
   .form-program__email {
@@ -143,6 +262,10 @@
     margin-left: 80px;
   }
 
+  .form-program__checkbox {
+    margin-right: 130px;
+  }
+
   .form-program__wrapper {
     &--main {
       display: flex;
@@ -151,17 +274,25 @@
 
     &--contacts {
       display: flex;
+      margin-top: 20px;
     }
 
     &--extra {
       flex-wrap: nowrap;
       align-items: flex-start;
+      margin-top: 0;
+      width: 100%;
     }
   }
 
+  .form-program__textarea {
+    margin-top: 20px;
+    padding: 20px;
+  }
 
   .form-program__submit-btn {
     width: 570px;
+    margin-top: 35px;
   }
 
   .form-program__required-fields {

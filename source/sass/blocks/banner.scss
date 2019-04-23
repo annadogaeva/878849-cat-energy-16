@@ -2,6 +2,7 @@
   background: $accent url("../img/gift-photo-mobile@1x.jpg") no-repeat;
   color: white;
   min-height: 290px;
+  width: 280px;
   text-align: center;
   padding: 40px;
 }
@@ -24,7 +25,7 @@
     width: 100%;
     min-height: 200px;
     text-align: center;
-    padding: 50px 90px;
+    padding: 50px 105px 50px 90px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -37,7 +38,7 @@
   .banner__info {
     @include zero;
     text-align: left;
-    width: 160px;
+    width: 180px;
   }
 }
 

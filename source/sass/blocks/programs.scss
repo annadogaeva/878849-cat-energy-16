@@ -13,6 +13,7 @@
   display: flex;
   flex-direction: column;
   margin-bottom: 20px;
+  min-height: 265px;
 }
 
 .programs__heading {
@@ -21,6 +22,37 @@
   margin-left: 70px;
   position: relative;
   padding-bottom: 30px;
+  padding-top: 10px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background: $accent;
+    border-radius: 50%;
+    left: -70px;
+    top: 0;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 50px;
+    height: 50px;
+  }
+
+  &--weightloss::after {
+    background: url("../img/icon-cat-slim.svg") no-repeat;
+    left: -65px;
+    top: -5px;
+  }
+
+  &--weightgain::after {
+    background: url("../img/icon-cat-pro.svg") no-repeat;
+    left: -80px;
+    width: 70px;
+  }
 }
 
 .programs__description {
@@ -36,21 +68,78 @@
     decoration: none;
   }
   position: relative;
-  padding-top: 20px;
+  padding-top: 25px;
+  width: 110px;
+  display: block;
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 25px;
+    height: 10px;
+    bottom: 9%;
+    right: -10%;
+    background-image: url("../img/icon-right-arrow-long.svg");
+    background-repeat: no-repeat;
+  }
+
+  &:hover::after,
+  &:focus::after,
+  &:active::after {
+    background-image: url("../img/icon-right-arrow-verylong.svg");
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 @media (min-width: $tablet-width) {
+  .programs__list {
+    margin: 0 30px;
+  }
+
   .programs__item {
-    padding: 80px 50px 60px 50px;
+    padding: 75px 50px 65px 50px;
+    margin-bottom: 30px;
   }
 
   .programs__heading {
     @include heading;
     margin-bottom: 20px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 200px;
+      height: 200px;
+      background: $accent;
+      border-radius: 50%;
+      left: 65%;
+      top: 15px;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 200px;
+      height: 200px;
+    }
+
+    &--weightloss::after {
+      left: 68%;
+      top: 0;
+    }
+
+    &--weightgain::after {
+      left: 58%;
+      top: 60px;
+      width: 280px;
+    }
   }
 
   .programs__description {
-    width: 390px;
+    width: 340px;
     font-size: 16px;
     line-height: 24px;
     border: none;
@@ -58,12 +147,17 @@
 
   .programs__catalog-link {
     font-size: 20px;
+
+    &::after {
+      bottom: 9%;
+      right: -40%;
+    }
   }
 }
 
 @media (min-width: $desktop-width) {
   .programs {
-    margin-bottom: 130px;
+    margin-bottom: 35px;
   }
 
   .programs__list {
@@ -74,10 +168,45 @@
 
   .programs__item {
     width: 570px;
+    min-height: 370px;
   }
 
   .programs__heading {
     margin-left: 165px;
-    margin-bottom: 80px;
+    margin-bottom: 70px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 100px;
+      height: 100px;
+      background: $accent;
+      border-radius: 50%;
+      left: -160px;
+      top: -30px;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 100px;
+      height: 100px;
+    }
+
+    &--weightloss::after {
+      left: -150px;
+      top: -35px;
+    }
+
+    &--weightgain::after {
+      left: -190px;
+      top: -7px;
+      width: 140px;
+    }
+  }
+
+  .programs__description {
+    width: 100%;
+    padding-bottom: 5px;
   }
 }
