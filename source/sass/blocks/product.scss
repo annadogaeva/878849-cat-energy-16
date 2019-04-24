@@ -1,6 +1,6 @@
 .product {
   border-bottom: $border;
-  padding: 30px 20px;
+  padding: 0 20px 23px 20px;
 }
 
 .product__wrapper {
@@ -11,7 +11,12 @@
   @include heading-small;
   text-transform: uppercase;
   width: 85px;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
+}
+
+.product__content {
+  padding-top: 25px;
+  width: 140px;
 }
 
 @media (min-width: $tablet-width) {
@@ -21,11 +26,12 @@
     background-color: $darker;
     border: none;
     position: relative;
-    padding-top: 150px;
+    padding: 150px 35px 40px 35px;
   }
 
   .product__content {
     width: 100%;
+    padding-top: 10px;
   }
 
   .product__img {

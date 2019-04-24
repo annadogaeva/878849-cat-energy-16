@@ -1,6 +1,11 @@
 .product-table {
   width: 100%;
   margin-bottom: 10px;
+  font-size: 12px;
+
+  &--extra {
+    font-size: 14px;
+  }
 }
 
 .product-table__cell:first-child {
@@ -12,11 +17,15 @@
 }
 
 @media (min-width: $tablet-width) {
+  .product-table {
+    font-size: 16px;
+  }
+
   .product-table__cell {
     border: none;
     border-bottom: $border;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
   }
 
   .product-extra {

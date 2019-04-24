@@ -1,22 +1,22 @@
 .promo {
   background-color: #65a93c;
-  background-image: url("../img/index-can-mobile@1x.png"), url("../img/index-background-mobile@1x.jpg"), linear-gradient(#65a93c 64%, white 50%);
+  background-image: url("../img/index-can-mobile@1x.png"), url("../img/index-background-mobile@1x.jpg"), linear-gradient(#65a93c 60%, white 60%);
   background-repeat: no-repeat;
   background-position: center 70%, top center;
   color: white;
   font: {
     family: "Oswald";
   }
-  padding: 25px 35px;
+  padding: 25px 20px;
   text-align: center;
-  margin-bottom: 20px;
-  min-height: 480px;
+  min-height: 470px;
 }
 
 .promo__banner-heading {
   @include heading;
   color: white;
-  margin-bottom: 25px;
+  max-width: 280px;
+  margin: 0 auto 25px auto;
 }
 
 .promo__banner-description {
@@ -29,17 +29,19 @@
 }
 
 .promo__choose-btn {
-  margin-top: 300px;
+  margin: 300px auto 0 auto;
+  width: 280px;
 }
 
 @media (min-width: $tablet-width) {
   .promo {
     background-color: white;
     background-image: url("../img/index-can-tablet@1x.jpg");
+    background-position: center 100%;
     color: black;
     padding-left: 120px;
     padding-right: 120px;
-    min-height: 670px;
+    min-height: 835px;
   }
 
   .promo__banner-heading {
@@ -48,23 +50,37 @@
     text-align: left;
     margin-bottom: 40px;
     font-size: 60px;
+    line-height: 60px;
+    max-width: 100%;
+    margin-left: 0;
   }
 
   .promo__banner-description {
     text-align: left;
     margin-bottom: 40px;
+    font-size: 20px;
   }
 
   .promo__choose-btn {
     width: 245px;
     margin-top: 0;
+    min-height: 50px;
+    font-size: 20px;
+    padding-top: 12px;
+    margin-left: 0;
   }
 }
 
 @media (min-width: $desktop-width) {
   .promo {
-    background-image: url("../img/index-can-desktop@1x.png");
-    padding-left: 85px;
-    padding-right: 85px;
+    background-image: url("../img/index-can-desktop@1x.png"), url("../img/index-background-desktop@1x.jpg"), linear-gradient(to right, #ffffff 57%, #65a93c 57%);
+    background-position: 63% 75%, 100% 50%;
+    padding: 222px 80px 25px 190px;
+    min-height: 695px;
+    margin-bottom: 80px;
+  }
+
+  .promo__banner-description {
+    margin-bottom: 50px;
   }
 }

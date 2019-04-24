@@ -14,7 +14,7 @@
     <div class="header__wrapper">
       <div class="header__logo">
         <a href="index.html">
-          <picture>
+          <picture class="header__logo-img">
             <source srcset="img/logo-desktop.svg" type="image/svg+xml" media="(min-width: 1440px)">
             <source srcset="img/logo-tablet.svg" type="image/svg+xml" media="(min-width: 768px)">
             <img src="img/logo-mobile.svg" alt="Логотип Кэт-Энерджи" width="202" height="59">
@@ -24,12 +24,15 @@
       <div class="header__menu-btn">
         <a href=""><img src="img/icon-mobile-menu.svg" width="25" height="25" alt="Меню"></a>
       </div>
+      <div class="header__close-btn">
+        <a href="#"><img src="img/icon-close.svg" width="25" height="25" alt="Закрыть"></a>
+      </div>
     </div>
     <nav class="nav">
       <ul class="nav__list">
         <li class="nav__item"><a href="index.html" class="nav__link">Главная</a></li>
         <li class="nav__item"><a href="catalog.html" class="nav__link">Каталог продукции</a></li>
-        <li class="nav__item"><a href="form.html" class="nav__link">Подбор программы</a></li>
+        <li class="nav__item"><a href="form.html" class="nav__link nav__link--current">Подбор программы</a></li>
       </ul>
     </nav>
     <h1 class="visually-hidden">Кэт Энерджи - магазин функционального питания для котов.</h1>
@@ -55,33 +58,33 @@
           </fieldset>
           <fieldset class="form-program__section form-program__section--main form-program__section--radio">
             <legend class="visually-hidden">Выбор программы</legend>
-            <input type="radio" name="program-select" id="program1" class="visually-hidden"><label for="program1" tabindex="0" class="form-program__radio radio form-program__label">Похудение</label>
-            <input type="radio" name="program-select" id="program2" class="visually-hidden"><label for="program2" tabindex="0" class="form-program__radio radio form-program__label">Набор массы</label>
-            <input type="radio" name="program-select" id="program3" class="visually-hidden"><label for="program3" tabindex="0" class="form-program__radio radio form-program__label">Не знаю (нужен ваш совет)</label>
+            <input type="radio" name="program-select" id="program1" class="visually-hidden radio"><label for="program1" tabindex="0" class="form-program__radio form-program__label">Похудение</label>
+            <input type="radio" name="program-select" id="program2" class="visually-hidden radio"><label for="program2" tabindex="0" class="form-program__radio form-program__label">Набор массы</label>
+            <input type="radio" name="program-select" id="program3" class="visually-hidden radio"><label for="program3" tabindex="0" class="form-program__radio form-program__label">Не знаю (нужен ваш совет)</label>
           </fieldset>
         </div>
-        <fieldset class="form-program__section">
-          <legend class="form-program__section-name">Контактные данные (владельца кота)</legend>
+        <fieldset class="form-program__section form-program__section--contacts">
+          <legend class="form-program__section-name"><span class="form-program__section-text">Контактные данные (владельца кота)</span></legend>
           <div class="form-program__wrapper form-program__wrapper--contacts">
             <div class="form-program__wrapper form-program__wrapper--field form-program__email">
-              <label for="email" class="form-program__label">E-mail:*</label><input type="email" id="email" required name="email" class="form-program__text input-text">
+              <label for="email" class="form-program__label">E-mail:*</label><input type="email" id="email" required name="email" class="form-program__text input-text input-text--email">
             </div>
             <div class="form-program__wrapper form-program__wrapper--field form-program__phone">
-              <label for="phone-number" class="form-program__label">Телефон:*</label><input type="tel" id="phone-number" required name="phone-number" class="form-program__text input-text">
+              <label for="phone-number" class="form-program__label">Телефон:*</label><input type="tel" id="phone-number" required name="phone-number" class="form-program__text input-text input-text--phone">
             </div>
           </div>
         </fieldset>
-        <fieldset class="form-program__section">
-          <legend class="form-program__section-name">Комментарий</legend>
+        <fieldset class="form-program__section form-program__section--comment">
+          <legend class="form-program__section-name"><span class="form-program__section-text">Комментарий</span></legend>
           <textarea placeholder="Расскажите обо всех повадках кота" name="cat-info" class="form-program__textarea textarea" rows="5"></textarea>
         </fieldset>
-        <fieldset class="form-program__section">
-          <legend class="form-program__section-name">Дополнительно</legend>
+        <fieldset class="form-program__section form-program__section--extra">
+          <legend class="form-program__section-name"><span class="form-program__section-text">Дополнительно</span></legend>
           <div class="form-program__wrapper form-program__wrapper--extra">
-            <input type="checkbox" id="checkbox1" class="visually-hidden" name="nosugar"><label for="checkbox1" tabindex="0" class="form-program__checkbox checkbox form-program__label">Сахарозаменитель</label>
-            <input type="checkbox" id="checkbox2" class="visually-hidden" name="water"><label for="checkbox2" tabindex="0" class="form-program__checkbox checkbox form-program__label">Питьевая вода</label>
-            <input type="checkbox" id="checkbox3" class="visually-hidden" name="milk"><label for="checkbox3" tabindex="0" class="form-program__checkbox checkbox form-program__label">Молоко</label>
-            <input type="checkbox" id="checkbox4" class="visually-hidden" name="vitamin"><label for="checkbox4" tabindex="0" class="form-program__checkbox checkbox form-program__label">Витамины</label>
+            <input type="checkbox" id="checkbox1" class="visually-hidden checkbox" name="nosugar"><label for="checkbox1" tabindex="0" class="form-program__checkbox form-program__label">Сахарозаменитель</label>
+            <input type="checkbox" id="checkbox2" class="visually-hidden checkbox" name="water"><label for="checkbox2" tabindex="0" class="form-program__checkbox form-program__label">Питьевая вода</label>
+            <input type="checkbox" id="checkbox3" class="visually-hidden checkbox" name="milk"><label for="checkbox3" tabindex="0" class="form-program__checkbox form-program__label">Молоко</label>
+            <input type="checkbox" id="checkbox4" class="visually-hidden checkbox" name="vitamin"><label for="checkbox4" tabindex="0" class="form-program__checkbox form-program__label">Витамины</label>
           </div>
         </fieldset>
         <div class="form-program__wrapper">
@@ -90,15 +93,15 @@
         </div>
       </form>
     </section>
-    <section class="contacts contacts--inner">
+    <section class="contacts">
       <h2 class="visually-hidden">Контактная информация</h2>
-      <div class="contacts__wrapper">
+      <div class="contacts__wrapper contacts__wrapper--inner">
         <div class="contacts__invite">Приглашаем к сотрудничеству дилеров!</div>
-        <div class="contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</div>
+        <div class="contacts__address">ул. Большая Конюшенная, д. 19/8 <span class="contacts__city">Санкт-Петербург</span></div>
       </div>
       <div class="contacts__map">
         <!--<iframe src=""></iframe>-->
-        <img src="img/map-pin.png" alt="ул. Большая Конюшенная, д. 19/8 г.Санкт-Петербург" class="contacts__pin">
+        <img src="img/map-pin.png" alt="ул. Большая Конюшенная, д. 19/8 г.Санкт-Петербург" class="contacts__pin" width="60" height="55">
       </div>
     </section>
   </main>

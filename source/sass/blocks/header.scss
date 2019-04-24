@@ -6,6 +6,22 @@
   align-items: center;
   justify-content: space-around;
   display: flex;
+  min-height: 65px;
+}
+
+.header__menu-btn {
+  display: none;
+}
+
+.header__logo-img {
+  &:hover,
+  &:focus {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
 }
 
 
@@ -15,7 +31,36 @@
     justify-content: space-between;
   }
 
+  .header__logo {
+    padding-left: 30px;
+    margin-top: -10px;
+    width: 200px;
+  }
+
   .header__menu-btn {
     display: none;
+  }
+
+  .header__close-btn {
+    display: none;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .header {
+    padding-top: 35px;
+    background-color: transparent;
+
+    &--index {
+      position: absolute;
+      top: 0;
+      left: 110px;
+      right: 110px;
+    }
+  }
+
+  .header__logo {
+    width: 230px;
+    padding-left: 0;
   }
 }

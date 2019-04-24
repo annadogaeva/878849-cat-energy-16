@@ -1,6 +1,6 @@
 .about {
   background-color: white;
-  padding: 35px 20px;
+  padding: 0 20px 35px 20px;
 }
 
 .about__heading {
@@ -10,18 +10,44 @@
 
 .about__list {
   @include lists;
+  padding-top: 15px;
 }
 
 .about__item {
   margin-left: 80px;
-  margin-bottom: 30px;
+  margin-bottom: 10%;
   position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    background: $accent no-repeat center center;
+    width: 60px;
+    height: 60px;
+    left: -80px;
+  }
+
+  &--healthy::before {
+    background-image: url("../img/advantage-leaf@1x.png");
+  }
+
+  &--quickcook::before {
+    background-image: url("../img/advantage-powder@1x.png");
+  }
+
+  &--fullmeal::before {
+    background-image: url("../img/advantage-dining@1x.png");
+  }
+
+  &--fastresult::before {
+    background-image: url("../img/advantage-clock@1x.png");
+  }
 }
 
 @media (min-width: $tablet-width) {
   .about {
     border-bottom: $border;
-    padding: 35px 30px;
+    padding: 10px 30px 0 30px;
   }
 
   .about__heading {
@@ -33,27 +59,85 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    padding: 0;
+    margin-bottom: -20px;
+    overflow: hidden;
   }
 
   .about__item {
     width: 40%;
-    padding-top: 110px;
-    margin-bottom: 110px;
+    padding-top: 120px;
+    margin-bottom: 80px;
     margin-left: 0;
+    padding-right: 80px;
+    margin-right: 40px;
+    line-height: 24px;
+    min-height: 235px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      background: $accent no-repeat center center;
+      width: 80px;
+      height: 80px;
+      left: 0;
+      top: 5px;
+    }
+
+    &--healthy {
+      background: url("../img/1@1x.png") no-repeat 60%;
+    }
+
+    &--healthy::before {
+      background-image: url("../img/advantage-leaf@1x.png");
+    }
+
+    &--quickcook {
+      background: url("../img/2@1x.png") no-repeat 70%;
+    }
+
+    &--quickcook::before {
+      background-image: url("../img/advantage-powder@1x.png");
+    }
+
+    &--fullmeal {
+      background: url("../img/3@1x.png") no-repeat 70%;
+    }
+
+    &--fullmeal::before {
+      background-image: url("../img/advantage-dining@1x.png");
+    }
+
+    &--fastresult {
+      background: url("../img/4@1x.png") no-repeat 80%;
+    }
+
+    &--fastresult::before {
+      background-image: url("../img/advantage-clock@1x.png");
+    }
   }
 }
 
 @media (min-width: $desktop-width) {
   .about {
     padding: 0;
-    padding-bottom: 85px;
+    padding-bottom: 40px;
     border: none;
+  }
+
+  .about__list {
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    margin-right: -80px;
+    overflow: hidden;
   }
 
   .about__item {
     width: 245px;
-    margin-right: 30px;
+    margin-right: 80px;
     padding-bottom: 50px;
+    padding-top: 110px;
     margin-bottom: 0;
+    padding-right: 0;
   }
 }
