@@ -23,6 +23,11 @@
   width: 100%;
   min-height: 360px;
   background-size: cover;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/bg-map-mobile@2x.png");
+      background-size: 320px;
+    }
 }
 
 .contacts__pin {
@@ -69,6 +74,11 @@
     background-image: url("../img/bg-map-tablet@1x.png");
     width: 100%;
     min-height: 395px;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/bg-map-tablet@2x.png");
+      background-size: 767px;
+    }
   }
 }
 
@@ -80,6 +90,11 @@
 
   .contacts__map {
     background-image: url("../img/bg-map-desktop@1x.png");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/bg-map-desktop@2x.png");
+      background-size: 1440px;
+    }
   }
 
   .contacts__wrapper {

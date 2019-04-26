@@ -31,6 +31,7 @@
   .nav__list {
     display: flex;
     justify-content: flex-end;
+    flex-wrap: wrap;
   }
 
   .nav__item {
@@ -54,6 +55,10 @@
 @media (min-width: $desktop-width) {
   .nav {
     background-color: transparent;
+  }
+
+  .nav__list {
+    margin-left: 460px;
   }
 
   .nav__link {

@@ -29,18 +29,36 @@
 
   &--healthy::before {
     background-image: url("../img/advantage-leaf@1x.png");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/advantage-leaf@2x.png");
+      background-size: 50px auto;
+    }
   }
 
   &--quickcook::before {
     background-image: url("../img/advantage-powder@1x.png");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/advantage-powder@2x.png");
+      background-size: 50px auto;
+    }
   }
 
   &--fullmeal::before {
     background-image: url("../img/advantage-dining@1x.png");
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background-image: url("../img/advantage-dining@2x.png");
+        background-size: 50px auto;
+    }
   }
 
   &--fastresult::before {
     background-image: url("../img/advantage-clock@1x.png");
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background-image: url("../img/advantage-clock@2x.png");
+        background-size: 50px auto;
+    }
   }
 }
 
@@ -77,7 +95,6 @@
     &::before {
       content: "";
       position: absolute;
-      background: $accent no-repeat center center;
       width: 80px;
       height: 80px;
       left: 0;
@@ -88,32 +105,16 @@
       background: url("../img/1@1x.png") no-repeat 60%;
     }
 
-    &--healthy::before {
-      background-image: url("../img/advantage-leaf@1x.png");
-    }
-
     &--quickcook {
       background: url("../img/2@1x.png") no-repeat 70%;
-    }
-
-    &--quickcook::before {
-      background-image: url("../img/advantage-powder@1x.png");
     }
 
     &--fullmeal {
       background: url("../img/3@1x.png") no-repeat 70%;
     }
 
-    &--fullmeal::before {
-      background-image: url("../img/advantage-dining@1x.png");
-    }
-
     &--fastresult {
       background: url("../img/4@1x.png") no-repeat 80%;
-    }
-
-    &--fastresult::before {
-      background-image: url("../img/advantage-clock@1x.png");
     }
   }
 }

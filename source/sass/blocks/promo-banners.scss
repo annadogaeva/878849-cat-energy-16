@@ -1,5 +1,7 @@
 .promo-banners {
   padding: 10px 20px 30px 20px;
+  display: flex;
+  justify-content: center;
 }
 
 @media (min-width: $tablet-width) {
