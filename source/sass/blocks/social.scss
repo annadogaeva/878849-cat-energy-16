@@ -1,12 +1,14 @@
 .social {
   border-bottom: $border;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 .social__list {
   @include lists;
   display: flex;
   align-items: center;
-  min-height: 60px;
+  min-height: 20px;
   width: 130px;
   margin: 0 auto;
 }

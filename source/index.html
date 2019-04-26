@@ -47,7 +47,7 @@
       <p class="promo__banner-description">
         Занялся собой? Займись котом!
       </p>
-      <a href="#" class="promo__choose-btn button">Подобрать программу</a>
+      <a href="form.html" class="promo__choose-btn button">Подобрать программу</a>
       </div>
     </section>
     <section class="programs container">
@@ -58,14 +58,14 @@
           <p class="programs__description">
             Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.
           </p>
-          <a href="#" class="programs__catalog-link">Каталог Slim</a>
+          <a href="catalog.html" class="programs__catalog-link">Каталог Slim</a>
         </li>
         <li class="programs__item">
           <h3 class="programs__heading programs__heading--weightgain">Набор массы</h3>
           <p class="programs__description">
             Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!
           </p>
-          <a href="#" class="programs__catalog-link">Каталог Pro</a>
+          <a href="catalog.html" class="programs__catalog-link">Каталог Pro</a>
         </li>
       </ul>
     </section>
@@ -103,16 +103,16 @@
           <ul class="cat-slider__slider-list">
             <li class="cat-slider__slider-item cat-slider__slider-item--fat-cat">
               <picture>
-                <source srcset="img/before-desktop@1x.png" media="(min-width: 1440px)">
-                <source srcset="img/before-tablet@1x.png" media="(min-width: 768px)">
-                <img src="img/before-mobile@1x.png" width="320" height="240" alt="Кот Борис До" class="cat-slider__slider-img">
+                <source srcset="img/before-desktop@1x.png 1x, img/before-desktop@2x.png 2x" media="(min-width: 1440px)">
+                <source srcset="img/before-tablet@1x.png 1x, img/before-tablet@2x.png 2x" media="(min-width: 768px)">
+                <img src="img/before-mobile@1x.png" width="320" height="240" alt="Кот Борис До" class="cat-slider__slider-img" srcset="img/before-mobile@2x.png 2x">
               </picture>
             </li>
             <li class="cat-slider__slider-item cat-slider__slider-item--thin-cat">
               <picture>
-                <source srcset="img/after-desktop@1x.png" type="image/svg+xml" media="(min-width: 1440px)">
-                <source srcset="img/after-tablet@1x.png" type="image/svg+xml" media="(min-width: 768px)">
-                <img src="img/after-mobile@1x.png" width="#" height="#" alt="Кот Борис После" class="cat-slider__slider-img">
+                <source srcset="img/after-desktop@1x.png 1x, img/after-desktop@2x.png 2x" type="image/svg+xml" media="(min-width: 1440px)">
+                <source srcset="img/after-tablet@1x.png 1x, img/after-tablet@1x.png 2x" type="image/svg+xml" media="(min-width: 768px)">
+                <img src="img/after-mobile@1x.png" srcset="img/after-mobile@2x.png 2x" width="320" height="240" alt="Кот Борис После" class="cat-slider__slider-img">
               </picture>
             </li>
           </ul>
@@ -133,7 +133,6 @@
         <div class="contacts__address">ул. Большая Конюшенная, д. 19/8 <span class="contacts__city">Санкт-Петербург</span></div>
       </div>
       <div class="contacts__map">
-        <!--<iframe src=""></iframe>-->
         <img src="img/map-pin.png" alt="ул. Большая Конюшенная, д. 19/8 г.Санкт-Петербург" class="contacts__pin" width="60" height="55">
       </div>
     </section>
@@ -162,6 +161,7 @@
       </div>
     </div>
   </footer>
+  <script type="text/javascript" src="js/picturefill.js"></script>
 </body>
 
 </html>

@@ -25,6 +25,8 @@
   vertical-align: middle;
   padding: 0 4%;
   max-width: 85px;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 @media (min-width: $tablet-width) {
@@ -42,7 +44,7 @@
     top: 90%;
     font-size: 14px;
     background-color: white;
-    max-width: 100%;
+    max-width: 165px;
   }
 }
 
@@ -50,5 +52,6 @@
 @media (min-width: $desktop-width) {
   .result__descripton {
     background-color: $darker;
+    white-space: nowrap;
   }
 }
