@@ -7,7 +7,6 @@
   justify-content: space-around;
   display: flex;
   min-height: 65px;
-  align-self: flex-start;
 }
 
 .header__menu-btn {
@@ -58,6 +57,10 @@
       left: 110px;
       right: 110px;
     }
+  }
+
+  .header__wrapper {
+      align-self: flex-start;
   }
 
   .header__logo {
