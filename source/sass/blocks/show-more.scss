@@ -23,6 +23,10 @@
   margin-bottom: 25px;
 }
 
+.show-more__plus-btn {
+  fill: #d3d3d3;
+}
+
 @media (min-width: $tablet-width) {
   .show-more {
     border: $border;
@@ -37,6 +41,7 @@
 
   .show-more__plus-btn {
     width: 60px;
+    height: 60px;
   }
 
   .show-more__info {

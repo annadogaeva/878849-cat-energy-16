@@ -9,16 +9,20 @@
   border: 1px solid rgba(207, 207, 207, 0.5);
   margin-right: 15px;
   cursor: pointer;
-
-  &:hover,
-  &:focus {
-    border: 1px solid #cdcdcd;
-  }
-
-  &:disabled {
-    opacity: 0.3;
-  }
 }
+
+.radio + label:hover::before {
+  border: 1px solid #cdcdcd;
+}
+
+.radio:disabled + label::before {
+  border: 1px solid #cfcfcf;
+}
+
+.radio:disabled + label {
+  opacity: 0.3;
+}
+
 
 .radio:checked + label::before {
   content: "";
@@ -26,15 +30,18 @@
   vertical-align: middle;
   border-radius: 50%;
   border: 1px solid rgba(207, 207, 207, 0.5);
+}
 
-  &:hover,
-  &:focus {
-    border: 1px solid #cdcdcd;
-  }
+.radio:checked + label:hover::before {
+  border: 1px solid #cdcdcd;
+}
 
-  &:disabled {
-    opacity: 0.3;
-  }
+.radio:checked:disabled + label:hover::before {
+  border: 1px solid #cfcfcf;
+}
+
+.radio:checked:disabled + label:hover {
+  opacity: 0.3;
 }
 
 @media (min-width: $tablet-width) {

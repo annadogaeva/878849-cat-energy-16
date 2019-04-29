@@ -8,15 +8,18 @@
   border: 1px solid rgba(207, 207, 207, 0.5);
   margin-right: 15px;
   cursor: pointer;
+}
 
-  &:hover,
-  &:focus {
-    border: 1px solid #cdcdcd;
-  }
+.checkbox + label:hover::before {
+  border: 1px solid #cdcdcd;
+}
 
-  &:disabled {
-    opacity: 0.3;
-  }
+.checkbox:disabled + label::before {
+  border: 1px solid #cfcfcf;
+}
+
+.checkbox:disabled + label {
+  opacity: 0.3;
 }
 
 .checkbox:checked + label::before {
@@ -25,15 +28,18 @@
   border: 1px solid rgba(207, 207, 207, 0.5);
   display: inline-block;
   vertical-align: middle;
+}
 
-  &:hover,
-  &:focus {
-    border: 1px solid #cdcdcd;
-  }
+.checkbox:checked + label:hover::before {
+  border: 1px solid #cdcdcd;
+}
 
-  &:disabled {
-    opacity: 0.3;
-  }
+.checkbox:checked:disabled + label:hover::before {
+  border: 1px solid #cfcfcf;
+}
+
+.checkbox:checked:disabled + label:hover {
+  opacity: 0.3;
 }
 
 @media (min-width: $tablet-width) {

@@ -19,15 +19,16 @@
 
 .contacts__map {
   background-image: url("../img/bg-map-mobile@1x.png");
+  background-repeat: no-repeat;
   position: relative;
   width: 100%;
   min-height: 360px;
   background-size: cover;
 
-    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: url("../img/bg-map-mobile@2x.png");
-      background-size: 320px;
-    }
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/bg-map-mobile@2x.png");
+    background-size: 320px;
+  }
 }
 
 .contacts__pin {

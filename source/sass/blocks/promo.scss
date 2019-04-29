@@ -1,6 +1,6 @@
 .promo {
   background-color: #65a93c;
-  background-image: url("../img/index-can-mobile@1x.png"), url("../img/index-background-mobile@1x.jpg"), linear-gradient(#65a93c 60%, white 70%);
+  background-image: url("../img/index-can-mobile@1x.png"), url("../img/index-background-mobile@1x.jpg"), linear-gradient(#65a93c 60%, white 60%);
   background-repeat: no-repeat;
   background-position: center 70%, top center;
   color: white;
@@ -11,10 +11,10 @@
   text-align: center;
   min-height: 470px;
 
-   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     background-image: url("../img/index-can-mobile@2x.png"), url("../img/index-background-mobile@2x.jpg"), linear-gradient(#65a93c 60%, white 60%);
     background-size: 280px, 320px, 100%;
-   }
+  }
 }
 
 .promo__banner-heading {
@@ -48,10 +48,10 @@
     padding-right: 120px;
     min-height: 835px;
 
-     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/index-can-tablet@2x.jpg");
       background-size: 709px;
-     }
+    }
   }
 
   .promo__banner-heading {
@@ -89,10 +89,10 @@
     min-height: 695px;
     margin-bottom: 80px;
 
-     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/index-can-desktop@2x.png"), url("../img/index-background-desktop@2x.jpg"), linear-gradient(to right, #ffffff 54%, #65a93c 54%);
       background-size: 552px, 720px;
-     }
+    }
   }
 
   .promo__banner-description {
