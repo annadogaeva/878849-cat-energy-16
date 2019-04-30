@@ -47,17 +47,19 @@
 
   &--fullmeal::before {
     background-image: url("../img/advantage-dining@1x.png");
-      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-        background-image: url("../img/advantage-dining@2x.png");
-        background-size: 50px auto;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/advantage-dining@2x.png");
+      background-size: 50px auto;
     }
   }
 
   &--fastresult::before {
     background-image: url("../img/advantage-clock@1x.png");
-      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-        background-image: url("../img/advantage-clock@2x.png");
-        background-size: 50px auto;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/advantage-clock@2x.png");
+      background-size: 50px auto;
     }
   }
 }

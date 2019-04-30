@@ -1,9 +1,18 @@
 .input-text {
   height: 45px;
   border: 1px solid rgba(207, 207, 207, 0.5);
+  padding: 3%;
 
   &:hover {
     border: 1px solid #cdcdcd;
+  }
+
+  &:active + .input-text__icon {
+    fill: $accent;
+  }
+
+  &:invalid + .input-text__icon {
+    fill: #ff8888;
   }
 
   &:active,
@@ -17,19 +26,20 @@
   }
 }
 
-.input-text--email {
-  background: url("../img/icon-mail.svg") no-repeat 95% center;
-  background-size: 20px;
-}
-
-.input-text--phone {
-  background: url("../img/icon-phone.svg") no-repeat 95% center;
-  background-size: 20px;
+.input-text__icon {
+  position: absolute;
+  right: 10px;
+  top: 25%;
 }
 
 @media (min-width: $tablet-width) {
   .input-text {
     height: 51px;
+  }
+
+  .input-text__icon {
+    left: 95%;
+    top: 25%;
   }
 }
 

@@ -12,6 +12,11 @@
 
 .copyright__logo-img {
   fill: #666666;
+
+  &:hover,
+  &:active {
+    fill: $accent;
+  }
 }
 
 @media (min-width: $tablet-width) {

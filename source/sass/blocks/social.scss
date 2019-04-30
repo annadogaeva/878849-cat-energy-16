@@ -7,10 +7,11 @@
 .social__list {
   @include lists;
   display: flex;
-  align-items: center;
+  align-items: top;
   min-height: 20px;
   width: 130px;
   margin: 0 auto;
+  justify-content: space-between;
 }
 
 .social__btn {
@@ -18,28 +19,12 @@
   width: 30px;
   height: 30px;
 
-  &--vk {
-    background: url("../img/icon-vk-mobile.svg") no-repeat center center;
-    width: 25px;
-    height: 15px;
-  }
-
-  &--instagram {
-    background: url("../img/icon-insta-mobile.svg") no-repeat center center;
-    width: 18px;
-    height: 18px;
-    margin-left: 30px;
-  }
-
-  &--facebook {
-    background: url("../img/icon-fb-mobile.svg") no-repeat center center;
-    width: 10px;
-    height: 20px;
-    margin-left: 38px;
-  }
-
   &:active {
     opacity: 0.3;
+  }
+
+  &:hover .social__icon {
+    fill: $accent;
   }
 }
 
@@ -49,22 +34,22 @@
   }
 
   .social__btn {
-    &--vk {
-      width: 30px;
-      height: 15px;
-      margin-left: 10px;
-    }
+    display: flex;
+    align-items: center;
+  }
 
-    &--instagram {
-      width: 25px;
-      height: 25px;
-      margin-left: 30px;
-    }
+  .social__icon--vk {
+    width: 30px;
+    height: 15px;
+  }
 
-    &--facebook {
-      width: 15px;
-      height: 30px;
-      margin-left: 30px;
-    }
+  .social__icon--insta {
+    width: 22px;
+    height: 22px;
+  }
+
+  .social__icon--fb {
+    width: 14px;
+    height: 28px;
   }
 }
