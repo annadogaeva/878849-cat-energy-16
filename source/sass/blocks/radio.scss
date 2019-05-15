@@ -15,11 +15,11 @@
   border: 1px solid #cdcdcd;
 }
 
-.radio:disabled + label::before {
+.radio:active + label::before {
   border: 1px solid #cfcfcf;
 }
 
-.radio:disabled + label {
+.radio:active + label {
   opacity: 0.3;
 }
 
@@ -36,11 +36,11 @@
   border: 1px solid #cdcdcd;
 }
 
-.radio:checked:disabled + label:hover::before {
+.radio:checked:active + label:hover::before {
   border: 1px solid #cfcfcf;
 }
 
-.radio:checked:disabled + label:hover {
+.radio:checked:active + label:hover {
   opacity: 0.3;
 }
 

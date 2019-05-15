@@ -14,11 +14,11 @@
   border: 1px solid #cdcdcd;
 }
 
-.checkbox:disabled + label::before {
+.checkbox:active + label::before {
   border: 1px solid #cfcfcf;
 }
 
-.checkbox:disabled + label {
+.checkbox:active + label {
   opacity: 0.3;
 }
 
@@ -34,11 +34,11 @@
   border: 1px solid #cdcdcd;
 }
 
-.checkbox:checked:disabled + label:hover::before {
+.checkbox:checked:active + label:hover::before {
   border: 1px solid #cfcfcf;
 }
 
-.checkbox:checked:disabled + label:hover {
+.checkbox:checked:active + label:hover {
   opacity: 0.3;
 }
 

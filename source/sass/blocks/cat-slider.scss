@@ -1,5 +1,6 @@
 .cat-slider__slider-list {
   @include lists;
+  position: relative;
 }
 
 .cat-slider__slider-item {
@@ -13,11 +14,25 @@
   width: 200px;
   margin: 30px auto 0 auto;
   padding-bottom: 35px;
+  position: absolute;
 }
 
 .cat-slider__toggle-state {
   @include heading-small;
   text-transform: uppercase;
+  border-bottom: 1px dotted #bebebe;
+  padding-bottom: 7px;
+
+  &:hover,
+  &:focus {
+    border-bottom: 1px solid #989898;
+  }
+
+  &:active {
+    border-bottom: none;
+    padding-bottom: 8px;
+  }
+
 }
 
 .cat-slider__toggle-bar {

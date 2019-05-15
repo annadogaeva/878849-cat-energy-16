@@ -2,17 +2,18 @@
   width: 100%;
   margin-bottom: 10px;
   font-size: 12px;
+  border-collapse: collapse;
 
   &--extra {
     font-size: 14px;
   }
 }
 
-.product-table__cell:first-child {
+.product-table__cell {
   text-align: left;
 }
 
-.product-table__cell:last-child {
+.product-table__cell--right {
   text-align: right;
 }
 

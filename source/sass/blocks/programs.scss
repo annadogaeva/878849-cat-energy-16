@@ -78,7 +78,7 @@
     width: 25px;
     height: 10px;
     bottom: 9%;
-    right: -10%;
+    left: 110%;
     background-image: url("../img/icon-right-arrow-long.svg");
     background-repeat: no-repeat;
   }
@@ -87,6 +87,7 @@
   &:focus::after,
   &:active::after {
     background-image: url("../img/icon-right-arrow-verylong.svg");
+    width: 34px;
   }
 
   &:active {

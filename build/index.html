@@ -115,7 +115,7 @@
                 <source type="image/webp" srcset="img/before-mobile@1x.webp 1x, img/before-mobile@2x.webp 2x">
                 <source srcset="img/before-desktop@1x.png 1x, img/before-desktop@2x.png 2x" media="(min-width: 1440px)">
                 <source srcset="img/before-tablet@1x.png 1x, img/before-tablet@2x.png 2x" media="(min-width: 768px)">
-                <img src="img/before-mobile@1x.png" width="320" height="240" alt="Кот Борис До" class="cat-slider__slider-img" srcset="img/before-mobile@2x.png 2x">
+                <img src="img/before-mobile@1x.png" width="320" height="240" alt="Кот Борис До" srcset="img/before-mobile@2x.png 2x" class="cat-slider__slider-img">
               </picture>
             </li>
             <li class="cat-slider__slider-item cat-slider__slider-item--thin-cat">
@@ -132,7 +132,7 @@
           <div class="cat-slider__toggle">
             <span class="cat-slider__toggle-state">Было</span>
             <div class="cat-slider__toggle-bar">
-              <div class="cat-slider__toggle-switch cat-slider__toggle-switch--left"></div>
+              <div class="cat-slider__toggle-switch cat-slider__toggle-switch--left" aria-label="Переключатель слайдера"></div>
             </div>
             <span class="cat-slider__toggle-state">Стало</span>
           </div>
@@ -162,15 +162,15 @@
       </div>
       <div class="footer__social social">
         <ul class="social__list">
-          <li class="social__item"><a href="#" class="social__btn">
+          <li class="social__item"><a href="#" class="social__btn" aria-label="Мы В Контакте">
               <svg width="22" height="20" class="social__icon social__icon--vk">
                 <use xlink:href="#icon-vk"></use>
               </svg></a></li>
-          <li class="social__item"><a href="#" class="social__btn">
+          <li class="social__item"><a href="#" class="social__btn" aria-label="Мы в Инстаграм">
               <svg width="16" height="20" class="social__icon social__icon--insta">
                 <use xlink:href="#icon-insta"></use>
               </svg></a></li>
-          <li class="social__item"><a href="#" class="social__btn">
+          <li class="social__item"><a href="#" class="social__btn" aria-label="Мы в Фейсбуке">
               <svg width="10" height="20" class="social__icon social__icon--fb">
                 <use xlink:href="#icon-fb"></use>
               </svg></a></li>

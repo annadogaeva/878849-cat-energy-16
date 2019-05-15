@@ -1,0 +1,22 @@
+.textarea {
+  width: 100%;
+  min-height: 145px;
+  resize: none;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 20px;
+  text-transform: uppercase;
+
+  &::placeholder {
+  	@include heading-small;
+  	color: #444444;
+  	text-transform: uppercase;
+  }
+}
+
+@media (min-width: $tablet-width) {
+	.textarea {
+		&::placeholder {
+			font-size: 20px;
+		}
+	}
+}
