@@ -26,10 +26,10 @@
       </div>
       <div class="header__menu-btn">
         <a href="#"><svg width="25" height="18">
-            <use xlink:href="#icon-menu"></use>
+            <use xlink:href="#icon-mobile-menu"></use>
           </svg></a>
       </div>
-      <div class="header__close-btn">
+      <div class="header__close-btn visually-hidden">
         <a href="#"><svg width="25" height="18">
             <use xlink:href="#icon-close"></use>
           </svg></a>
@@ -118,7 +118,7 @@
                 <img src="img/before-mobile@1x.png" width="320" height="240" alt="Кот Борис До" srcset="img/before-mobile@2x.png 2x" class="cat-slider__slider-img">
               </picture>
             </li>
-            <li class="cat-slider__slider-item cat-slider__slider-item--thin-cat">
+            <li class="cat-slider__slider-item cat-slider__slider-item--thin-cat visually-hidden">
               <picture>
                 <source type="image/webp" media="(min-width: 1440px)" srcset="img/after-desktop@1x.webp 1x, img/after-desktop@2x.webp 2x">
                 <source type="image/webp" media="(min-width: 768px)" srcset="img/after-tablet@1x.webp 1x, img/after-tablet@1x.webp 2x">
@@ -130,11 +130,11 @@
             </li>
           </ul>
           <div class="cat-slider__toggle">
-            <span class="cat-slider__toggle-state">Было</span>
+            <span class="cat-slider__toggle-state cat-slider__toggle-state--before">Было</span>
             <div class="cat-slider__toggle-bar">
               <div class="cat-slider__toggle-switch cat-slider__toggle-switch--left" aria-label="Переключатель слайдера"></div>
             </div>
-            <span class="cat-slider__toggle-state">Стало</span>
+            <span class="cat-slider__toggle-state cat-slider__toggle-state--after">Стало</span>
           </div>
         </div>
       </div>

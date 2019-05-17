@@ -49,13 +49,15 @@
   width: 35px;
   height: 6px;
   position: absolute;
-  bottom: 25%;
-  left: 5%;
   cursor: pointer;
-}
-
-.cat-slider__slider-item--thin-cat {
-  display: none;
+    &--left {
+      bottom: 25%;
+      left: 5%;
+    }
+    &--right {
+      bottom: 25%;
+      left: 50%;
+    }
 }
 
 @media (min-width: $tablet-width) {

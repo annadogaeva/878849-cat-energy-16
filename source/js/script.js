@@ -2,66 +2,102 @@ ymaps.ready(init);
 
 function init() {
 
-  if (screen.width > 1300) {
-    var mapDesktop = new ymaps.Map('map', {
-      center: [59.938884, 30.319360],
-      zoom: 17,
-      controls: [],
-      behaviors: ['drag']
-    });
+    if (screen.width > 1300) {
+        var mapDesktop = new ymaps.Map('map', {
+            center: [59.938884, 30.319360],
+            zoom: 17,
+            controls: [],
+            behaviors: ['drag']
+        });
 
-    var placemarkDesktop = new ymaps.Placemark([59.93901867, 30.32236785], {
-    }, {
-      iconLayout: 'default#image',
-      iconImageHref: 'img/map-pin.png',
-      iconImageSize: [124, 106],
-      iconImageOffset: [-23, -57]
-    });
+        var placemarkDesktop = new ymaps.Placemark([59.93901867, 30.32236785], {}, {
+            iconLayout: 'default#image',
+            iconImageHref: 'img/map-pin.png',
+            iconImageSize: [124, 106],
+            iconImageOffset: [-23, -57]
+        });
 
-    mapDesktop.geoObjects.add(placemarkDesktop);
+        mapDesktop.geoObjects.add(placemarkDesktop);
 
-  } 
+    } else if (screen.width >= 768 && screen.width < 1300) {
 
-  else if (screen.width >= 768 && screen.width < 1300) {
+        var mapTablet = new ymaps.Map('map', {
+            center: [59.93863106, 30.32305450],
+            zoom: 16,
+            controls: [],
+            behaviors: ['drag']
+        });
 
-    var mapTablet = new ymaps.Map('map', {
-      center: [59.93863106, 30.32305450],
-      zoom: 16,
-      controls: [],
-      behaviors: ['drag']
-    });
+        var placemarkTablet = new ymaps.Placemark([59.93901867, 30.32236785], {
 
-    var placemarkTablet = new ymaps.Placemark([59.93901867, 30.32236785], {
+        }, {
+            iconLayout: 'default#image',
+            iconImageHref: 'img/map-pin.png',
+            iconImageSize: [103, 90],
+            iconImageOffset: []
+        });
 
-    }, {
-      iconLayout: 'default#image',
-      iconImageHref: 'img/map-pin.png',
-      iconImageSize: [103, 90],
-      iconImageOffset: []
-    });
+        mapTablet.geoObjects.add(placemarkTablet);
+    } else if (screen.width < 768) {
 
-    mapTablet.geoObjects.add(placemarkTablet);
-  } 
+        var mapMobile = new ymaps.Map('map', {
+            center: [59.93863106, 30.32305450],
+            zoom: 16,
+            controls: [],
+            behaviors: ['drag']
+        });
 
-  else if (screen.width < 768) {
+        var placemarkMobile = new ymaps.Placemark([59.93901867, 30.32236785], {
 
-    var mapMobile = new ymaps.Map('map', {
-      center: [59.93863106, 30.32305450],
-      zoom: 16,
-      controls: [],
-      behaviors: ['drag']
-    });
+        }, {
+            iconLayout: 'default#image',
+            iconImageHref: 'img/map-pin.png',
+            iconImageSize: [50, 45],
+            iconImageOffset: [15, 15]
+        });
 
-    var placemarkMobile = new ymaps.Placemark([59.93901867, 30.32236785], {
-
-    }, {
-      iconLayout: 'default#image',
-      iconImageHref: 'img/map-pin.png',
-      iconImageSize: [50, 45],
-      iconImageOffset: [15, 15]
-    });
-
-    mapMobile.geoObjects.add(placemarkMobile);
-  }
+        mapMobile.geoObjects.add(placemarkMobile);
+    }
 
 }
+
+
+var closeBtn = document.querySelector(".header__close-btn");
+var menuBtn = document.querySelector(".header__menu-btn");
+var menu = document.querySelector(".nav");
+
+if (screen.width < 768) {
+    menu.classList.add("visually-hidden");
+}
+
+closeBtn.addEventListener("click", function() {
+    menu.classList.add("visually-hidden");
+    closeBtn.classList.add("visually-hidden");
+    menuBtn.classList.remove("visually-hidden");
+});
+
+menuBtn.addEventListener("click", function() {
+    menu.classList.remove("visually-hidden");
+    closeBtn.classList.remove("visually-hidden");
+    menuBtn.classList.add("visually-hidden");
+});
+
+var before = document.querySelector(".cat-slider__toggle-state--before");
+var after = document.querySelector(".cat-slider__toggle-state--after");
+var fatcat = document.querySelector(".cat-slider__slider-item--fat-cat");
+var thincat = document.querySelector(".cat-slider__slider-item--thin-cat");
+var sliderSwitch = document.querySelector(".cat-slider__toggle-switch");
+
+before.addEventListener("click", function() {
+    thincat.classList.add("visually-hidden");
+    fatcat.classList.remove("visually-hidden");
+    sliderSwitch.classList.add("cat-slider__toggle-switch--left")
+    sliderSwitch.classList.remove("cat-slider__toggle-switch--right")
+});
+
+after.addEventListener("click", function() {
+    fatcat.classList.add("visually-hidden");
+    thincat.classList.remove("visually-hidden");
+    sliderSwitch.classList.add("cat-slider__toggle-switch--right")
+    sliderSwitch.classList.remove("cat-slider__toggle-switch--left")
+});
