@@ -10,8 +10,8 @@
 </head>
 
 <body>
-    <div style="display: none">
-  <include src="build/img/sprite.svg"></include>
+  <div style="display: none">
+    <include src="build/img/sprite.svg"></include>
   </div>
   <header class="header container">
     <div class="header__wrapper">
@@ -92,10 +92,10 @@
         <fieldset class="form-program__section form-program__section--extra">
           <legend class="form-program__section-name"><span class="form-program__section-text">Дополнительно</span></legend>
           <div class="form-program__wrapper form-program__wrapper--extra">
-            <input type="checkbox" id="checkbox1" class="visually-hidden checkbox" name="nosugar"><label for="checkbox1" class="form-program__checkbox form-program__label">Сахарозаменитель</label>
-            <input type="checkbox" id="checkbox2" class="visually-hidden checkbox" name="water"><label for="checkbox2" class="form-program__checkbox form-program__label">Питьевая вода</label>
-            <input type="checkbox" id="checkbox3" class="visually-hidden checkbox" name="milk"><label for="checkbox3" class="form-program__checkbox form-program__label">Молоко</label>
-            <input type="checkbox" id="checkbox4" class="visually-hidden checkbox" name="vitamin"><label for="checkbox4" class="form-program__checkbox form-program__label">Витамины</label>
+            <input type="checkbox" id="checkbox1" class="visually-hidden checkbox" name="nosugar"><label for="checkbox1" class="form-program__label form-program__label--checkbox">Сахарозаменитель</label>
+            <input type="checkbox" id="checkbox2" class="visually-hidden checkbox" name="water"><label for="checkbox2" class="form-program__label form-program__label--checkbox">Питьевая вода</label>
+            <input type="checkbox" id="checkbox3" class="visually-hidden checkbox" name="milk"><label for="checkbox3" class="form-program__label form-program__label--checkbox">Молоко</label>
+            <input type="checkbox" id="checkbox4" class="visually-hidden checkbox" name="vitamin"><label for="checkbox4" class="form-program__label form-program__label--checkbox">Витамины</label>
           </div>
         </fieldset>
         <div class="form-program__wrapper">
@@ -110,11 +110,12 @@
         <div class="contacts__invite">Приглашаем к сотрудничеству дилеров!</div>
         <div class="contacts__address">ул. Большая Конюшенная, д. 19/8 <span class="contacts__city">Санкт-Петербург</span></div>
       </div>
-      <div class="contacts__map">
-        <img src="img/map-pin.png" alt="ул. Большая Конюшенная, д. 19/8 г.Санкт-Петербург" class="contacts__pin" width="60" height="55">
-      </div>
-        <div id="map">
-        <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Aeb89715a581bcbe7bf4fdfa7a8011e8298e7e78449d18602817bf1d9b4aa045d&amp;source=constructor"  class="contacts__ya-map"></iframe>
+      <div class="contacts__maps">
+        <div class="contacts__img-map">
+          <img src="img/map-pin.png" alt="ул. Большая Конюшенная, д. 19/8 г.Санкт-Петербург" class="contacts__pin" width="60" height="55">
+        </div>
+        <div id="map" class="contacts__ya-map">
+        </div>
       </div>
     </section>
   </main>
@@ -154,6 +155,8 @@
       </div>
     </div>
   </footer>
+  <script src="https://api-maps.yandex.ru/2.1/?apikey=05e29a47-80d9-45df-9534-87b1d4def3d6&lang=ru_RU">
+  </script>
   <script src="js/picturefill.js"></script>
   <script src="js/script.js"></script>
 </body>

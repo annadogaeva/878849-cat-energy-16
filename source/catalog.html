@@ -357,12 +357,12 @@
         <div class="contacts__invite">Приглашаем к сотрудничеству дилеров!</div>
         <div class="contacts__address">ул. Большая Конюшенная, д. 19/8 <span class="contacts__city">Санкт-Петербург</span></div>
       </div>
-      <div class="contacts__map">
-        <!--<iframe src=""></iframe>-->
-        <img src="img/map-pin.png" alt="ул. Большая Конюшенная, д. 19/8 г.Санкт-Петербург" class="contacts__pin" width="60" height="55">
-      </div>
-        <div id="map">
-        <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Aeb89715a581bcbe7bf4fdfa7a8011e8298e7e78449d18602817bf1d9b4aa045d&amp;source=constructor"  class="contacts__ya-map"></iframe>
+      <div class="contacts__maps">
+        <div class="contacts__img-map">
+          <img src="img/map-pin.png" alt="ул. Большая Конюшенная, д. 19/8 г.Санкт-Петербург" class="contacts__pin" width="60" height="55">
+        </div>
+        <div id="map" class="contacts__ya-map">
+        </div>
       </div>
     </section>
   </main>
@@ -374,7 +374,7 @@
         </a>
       </div>
       <div class="footer__social social">
-         <ul class="social__list">
+        <ul class="social__list">
           <li class="social__item"><a href="#" class="social__btn" aria-label="Мы В Контакте">
               <svg width="22" height="20" class="social__icon social__icon--vk">
                 <use xlink:href="#icon-vk"></use>
@@ -401,6 +401,8 @@
       </div>
     </div>
   </footer>
+  <script src="https://api-maps.yandex.ru/2.1/?apikey=05e29a47-80d9-45df-9534-87b1d4def3d6&lang=ru_RU">
+  </script>
   <script src="js/picturefill.js"></script>
   <script src="js/script.js"></script>
 </body>

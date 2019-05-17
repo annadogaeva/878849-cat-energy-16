@@ -11,7 +11,7 @@
 
 <body>
   <div style="display: none">
-  <include src="build/img/sprite.svg"></include>
+    <include src="build/img/sprite.svg"></include>
   </div>
   <header class="header header--index container">
     <div class="header__wrapper">
@@ -115,7 +115,7 @@
                 <source type="image/webp" srcset="img/before-mobile@1x.webp 1x, img/before-mobile@2x.webp 2x">
                 <source srcset="img/before-desktop@1x.png 1x, img/before-desktop@2x.png 2x" media="(min-width: 1440px)">
                 <source srcset="img/before-tablet@1x.png 1x, img/before-tablet@2x.png 2x" media="(min-width: 768px)">
-                <img src="img/before-mobile@1x.png" width="320" height="240" alt="Кот Борис До"srcset="img/before-mobile@2x.png 2x" class="cat-slider__slider-img">
+                <img src="img/before-mobile@1x.png" width="320" height="240" alt="Кот Борис До" srcset="img/before-mobile@2x.png 2x" class="cat-slider__slider-img">
               </picture>
             </li>
             <li class="cat-slider__slider-item cat-slider__slider-item--thin-cat">
@@ -145,11 +145,12 @@
         <div class="contacts__invite">Приглашаем к&nbsp;сотрудничеству дилеров!</div>
         <div class="contacts__address">ул. Большая Конюшенная, д. 19/8 <span class="contacts__city">Санкт-Петербург</span></div>
       </div>
-      <div class="contacts__map">
-        <img src="img/map-pin.png" alt="ул. Большая Конюшенная, д. 19/8 г.Санкт-Петербург" class="contacts__pin" width="60" height="55">
-      </div>
-        <div id="map">
-        <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Aeb89715a581bcbe7bf4fdfa7a8011e8298e7e78449d18602817bf1d9b4aa045d&amp;source=constructor"  class="contacts__ya-map"></iframe>
+      <div class="contacts__maps">
+        <div class="contacts__img-map">
+          <img src="img/map-pin.png" alt="ул. Большая Конюшенная, д. 19/8 г.Санкт-Петербург" class="contacts__pin" width="60" height="55">
+        </div>
+          <div id="map" class="contacts__ya-map">
+          </div>
       </div>
     </section>
   </main>
@@ -189,6 +190,8 @@
       </div>
     </div>
   </footer>
+  <script src="https://api-maps.yandex.ru/2.1/?apikey=05e29a47-80d9-45df-9534-87b1d4def3d6&lang=ru_RU">
+  </script>
   <script src="js/picturefill.js"></script>
   <script src="js/script.js"></script>
 </body>

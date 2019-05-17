@@ -166,14 +166,14 @@
 
   .form-program__label {
     font-size: 20px;
-    width: 100%;
   }
 
-  .form-program__checkbox {
+  .form-program__label--checkbox {
     max-width: 35%;
     margin-bottom: 30px;
     margin-right: 15%;
     margin-left: 0;
+    width: 100%;
   }
 
   .form-program__textarea {
@@ -247,7 +247,7 @@
     margin-left: -40px;
   }
 
-  .form-program__checkbox {
+  .form-program__label--checkbox {
     margin-right: 130px;
   }
 
