@@ -1,5 +1,7 @@
 .header {
   background-color: white;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .header__wrapper {
@@ -7,11 +9,31 @@
   justify-content: space-around;
   display: flex;
   min-height: 65px;
-  padding-top: 10px;
-  padding-bottom: 10px;
+}
+
+.header__logo {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .header__logo-img {
+  margin-bottom: 10px;
+  height: 40px;
+  width: 33px;
+
+  &:hover,
+  &:focus {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+}
+
+.header__logo-text {
   &:hover,
   &:focus {
     opacity: 0.8;
@@ -33,6 +55,15 @@
     padding-left: 30px;
     margin-top: -10px;
     width: 200px;
+  }
+
+  .header__logo-img {
+    width: 175px;
+    height: 60px;
+  }
+
+  .header__logo-text {
+    display: none;
   }
 
   .header__menu-btn {
@@ -64,5 +95,10 @@
   .header__logo {
     width: 230px;
     padding-left: 0;
+  }
+
+  .header__logo-img {
+    width: 205px;
+    height: 60px;
   }
 }

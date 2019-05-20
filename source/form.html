@@ -13,18 +13,20 @@
   <div style="display: none">
     <include src="build/img/sprite.svg"></include>
   </div>
-  <header class="header container">
+    <header class="header container">
     <div class="header__wrapper">
       <div class="header__logo">
-        <a href="index.html">
-          <picture class="header__logo-img">
+        <a href="index.html" class="header__link">
+          <picture>
             <source srcset="img/logo-desktop.svg" type="image/svg+xml" media="(min-width: 1440px)">
             <source srcset="img/logo-tablet.svg" type="image/svg+xml" media="(min-width: 768px)">
-            <img src="img/logo-mobile.svg" alt="Логотип Кэт-Энерджи" width="202" height="59">
+            <img src="img/logo-mobile.svg" alt="Логотип Кэт-Энерджи" width="35" height="40" class="header__logo-img">
           </picture>
         </a>
-      </div>
-      <div class="header__menu-btn">
+        <svg width="103" height="20" class="header__logo-text">
+          <use xlink:href="#logo-mobile-text"></use>
+        </svg>
+            <div class="header__menu-btn">
         <a href="#"><svg width="25" height="18">
             <use xlink:href="#icon-mobile-menu"></use>
           </svg></a>
@@ -34,12 +36,13 @@
             <use xlink:href="#icon-close"></use>
           </svg></a>
       </div>
+      </div>
     </div>
     <nav class="nav">
       <ul class="nav__list">
-        <li class="nav__item"><a href="index.html" class="nav__link nav__link--index nav__link--current">Главная</a></li>
-        <li class="nav__item"><a href="catalog.html" class="nav__link nav__link--index">Каталог продукции</a></li>
-        <li class="nav__item"><a href="form.html" class="nav__link nav__link--index">Подбор программы</a></li>
+        <li class="nav__item"><a href="index.html" class="nav__link">Главная</a></li>
+        <li class="nav__item"><a href="catalog.html" class="nav__link">Каталог продукции</a></li>
+        <li class="nav__item"><a href="form.html" class="nav__link nav__link--current">Подбор программы</a></li>
       </ul>
     </nav>
     <h1 class="visually-hidden">Кэт Энерджи - магазин функционального питания для котов.</h1>

@@ -122,13 +122,15 @@
 
   .contacts__wrapper {
     width: 570px;
-    min-height: 200px;
+    height: 200px;
     position: absolute;
     z-index: 2;
     left: 110px;
     top: 95px;
     padding-left: 75px;
     padding-right: 85px;
+    overflow: hidden;
+    padding-bottom: 70px;
   }
 
   .contacts__address {
