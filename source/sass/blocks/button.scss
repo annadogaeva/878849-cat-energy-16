@@ -4,8 +4,13 @@
   text-align: center;
   text-transform: uppercase;
   text-decoration: none;
-
-  @include heading-small;
+    font: {
+    family: "Oswald", "Arial", sans-serif;
+    size: 14px;
+    weight: normal;
+  }
+  color: black;
+  margin: 0;
   color: white;
   padding: 10px 0;
   border: none;

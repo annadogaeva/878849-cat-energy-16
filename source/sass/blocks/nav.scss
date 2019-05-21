@@ -25,6 +25,12 @@
   color: black;
   text-transform: uppercase;
   text-decoration: none;
+
+  &--current,
+  &--currentindex {
+    border-bottom: 2px solid $accent;
+    margin-top: 2px;
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -44,12 +50,6 @@
     font-size: 18px;
     font-weight: normal;
     padding-bottom: 10px;
-
-    &--current,
-    &--currentindex {
-      border-bottom: 2px solid $accent;
-      margin-top: 2px;
-    }
   }
 }
 

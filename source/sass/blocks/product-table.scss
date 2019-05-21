@@ -17,6 +17,12 @@
   text-align: right;
 }
 
+  .product-extra {
+    .product-table__cell--price {
+      text-align: right;
+    }
+  }
+
 @media (min-width: $tablet-width) {
   .product-table {
     font-size: 16px;
@@ -52,6 +58,10 @@
       padding: 0;
       border: none;
       text-align: left;
+    }
+
+    .product-table__cell--price {
+      text-align: right;
     }
   }
 }

@@ -3,11 +3,13 @@
   display: flex;
   flex-direction: column;
 
+
   @include zero;
   padding: 20px 0 0 0;
 
   &--main {
     border-bottom: $border;
+    padding-top: 15px;
   }
 
   &--radio {
@@ -33,6 +35,7 @@
   display: flex;
   align-items: center;
   position: relative;
+  max-width: 100%;
 }
 
 .form-program__label {
@@ -139,7 +142,7 @@
     }
 
     &--comment {
-      margin-bottom: 35px;
+      margin-bottom: 40px;
     }
 
     &--extra {

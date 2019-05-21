@@ -1,7 +1,7 @@
 .social {
   border-bottom: $border;
   padding-top: 20px;
-  padding-bottom: 20px;
+  padding-bottom: 10px;
 }
 
 .social__list {
@@ -31,6 +31,7 @@
 @media (min-width: $tablet-width) {
   .social {
     border: none;
+    padding: 10px 0 10px 40px;
   }
 
   .social__btn {

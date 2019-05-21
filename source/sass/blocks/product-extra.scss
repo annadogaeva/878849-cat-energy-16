@@ -1,7 +1,8 @@
 .product-extra {
   border-bottom: $border-darker;
   border-top: $border-darker;
-  padding: 10px 15px 15px 15px;
+  padding: 10px 0 20px 0;
+  margin: 0 15px 0 15px;
 }
 
 .product-extra__heading {
@@ -16,9 +17,8 @@
     width: 100%;
     min-height: 140px;
     background-color: white;
-    border-top: $border;
-    border-bottom: $border;
-    margin-bottom: 0;
+    border: $border;
+    margin: 0;
     padding: 25px 40px 30px 40px;
   }
 
@@ -40,6 +40,8 @@
     width: 100%;
     min-height: 70px;
     padding: 15px 0;
+    border-left: none;
+    border-right: none;
   }
 
   .product-extra__wrapper {

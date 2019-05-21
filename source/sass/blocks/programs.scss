@@ -23,7 +23,7 @@
   text-transform: uppercase;
   margin-left: 70px;
   position: relative;
-  padding-bottom: 30px;
+  padding-bottom: 40px;
   padding-top: 10px;
 
   &::before {
@@ -60,7 +60,8 @@
 .programs__description {
   @include zero;
   border-bottom: $border;
-  padding-bottom: 25px;
+  padding-bottom: 20px;
+  line-height: 18px;
 }
 
 .programs__catalog-link {
@@ -70,7 +71,7 @@
     decoration: none;
   }
   position: relative;
-  padding-top: 25px;
+  padding-top: 20px;
   width: 110px;
   display: block;
 
@@ -80,7 +81,7 @@
     width: 25px;
     height: 10px;
     bottom: 9%;
-    left: 110%;
+    left: 90%;
     background-image: url("../img/icon-right-arrow-long.svg");
     background-repeat: no-repeat;
   }
@@ -103,7 +104,7 @@
   }
 
   .programs__item {
-    padding: 75px 50px 65px 50px;
+    padding: 75px 50px 60px 50px;
     margin-bottom: 30px;
   }
 
@@ -150,10 +151,11 @@
 
   .programs__catalog-link {
     font-size: 20px;
+    padding-top: 40px;
 
     &::after {
       bottom: 9%;
-      right: -40%;
+      left: 120%;
     }
   }
 }
@@ -214,5 +216,9 @@
   .programs__description {
     width: 100%;
     padding-bottom: 5px;
+  }
+
+  .programs__catalog-link {
+    padding-top: 25px;
   }
 }

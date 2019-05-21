@@ -13,13 +13,16 @@
 }
 
 .banner__img {
-  margin-bottom: 70px;
+  margin-top: 25px;
+  margin-bottom: 60px;
 }
 
 .banner__info {
-  width: 130px;
+  width: 150px;
   text-align: center;
   margin: 0 auto;
+  line-height: 20px;
+  font-size: 16px;
 }
 
 @media (min-width: $tablet-width) {
@@ -58,6 +61,8 @@
     min-height: 282px;
     background: $accent url("../img/gift-photo-desktop@1x.jpg") no-repeat center center;
     flex-direction: column;
+    padding-bottom: 40px;
+    padding-top: 60px;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/gift-photo-desktop@2x.jpg");
@@ -65,8 +70,12 @@
     }
   }
 
+  .banner-img {
+    margin-top: 10px;
+  }
+
   .banner__info {
     text-align: center;
-    margin-top: 60px;
+    margin-top: 50px;
   }
 }

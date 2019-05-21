@@ -1,7 +1,7 @@
 .catalog__heading {
   @include heading;
 
-  padding: 30px 20px 36px 20px;
+  padding: 20px 20px 40px 20px;
   border-bottom: $border;
 }
 
@@ -12,7 +12,7 @@
 .catalog__subheading {
 
   padding-bottom: 30px;
-  padding-top: 30px;
+  padding-top: 33px;
   margin: 0;
   z-index: 2;
 
