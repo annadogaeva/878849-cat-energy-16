@@ -15,6 +15,8 @@ var webp = require("gulp-webp");
 var svgstore = require("gulp-svgstore");
 var posthtml = require("gulp-posthtml");
 var include = require("posthtml-include");
+var htmlmin = require("gulp-htmlmin");
+var uglify = require('gulp-uglify');
 
 gulp.task("css", function () {
   return gulp.src("source/sass/style.scss")
@@ -34,10 +36,25 @@ gulp.task("js", function () {
     .pipe(gulp.dest("build/js"))
 });
 
-gulp.task("minify", function() {
-  return gulp.src("build/css/style.css")
+gulp.task("minifyjs", function () {
+  return gulp.src("build/js/*.js")
+    .pipe(gulp.dest("build/js"))
+    .pipe(uglify())
+    .pipe(rename(function (path) {
+    path.basename += ".min";
+    path.extname = ".js";
+  }))
+    .pipe(gulp.dest("build/js"))
+    .pipe(server.stream());
+});
+
+gulp.task("minifycss", function() {
+  return gulp.src("build/css/*.css")
     .pipe(csso())
-    .pipe(rename("style.min.css"))
+    .pipe(rename(function (path) {
+    path.basename += ".min";
+    path.extname = ".css";
+    }))
     .pipe(sourcemap.write("."))
     .pipe(gulp.dest("build/css"))
     .pipe(server.stream());
@@ -52,10 +69,10 @@ gulp.task("server", function () {
     ui: false
   });
 
-  gulp.watch("source/sass/**/*.{scss,sass}", gulp.series("css", "minify", "refresh"));
+  gulp.watch("source/sass/**/*.{scss,sass}", gulp.series("cleancss", "css", "minifycss", "refresh"));
   gulp.watch("source/img/icon-*.svg", gulp.series("sprite", "html", "refresh"));
   gulp.watch("source/*.html", gulp.series("html", "refresh"));
-  gulp.watch("source/js/*.js", gulp.series("js", "refresh"));
+  gulp.watch("source/js/*.js", gulp.series("cleanjs", "js", "minifyjs", "refresh"));
 });
 
 gulp.task("refresh", function(done) {
@@ -78,6 +95,14 @@ gulp.task("copy", function() {
 
 gulp.task("clean", function() {
   return del("build");
+});
+
+gulp.task("cleanjs", function() {
+  return del("build/js");
+});
+
+gulp.task("cleancss", function() {
+  return del("build/css");
 });
 
 gulp.task("images", function() {
@@ -108,9 +133,10 @@ gulp.task("html", function() {
   .pipe(posthtml([
     include()
     ]))
+  .pipe(htmlmin({ collapseWhitespace: true }))
   .pipe(gulp.dest("build"));
 });
 
 
-gulp.task("build", gulp.series("clean", "copy", "css", "minify", "sprite", "html"));
+gulp.task("build", gulp.series("clean", "copy", "css", "minifycss", "js", "minifyjs", "sprite", "html"));
 gulp.task("start", gulp.series("build", "server"));

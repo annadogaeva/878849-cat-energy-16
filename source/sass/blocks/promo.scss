@@ -1,18 +1,18 @@
 .promo {
   background-color: #65a93c;
-  background-image: url("../img/index-can-mobile@1x.png"), url("../img/index-background-mobile@1x.jpg"), linear-gradient(#65a93c 60%, white 60%);
+  background-image: url("../img/index-can-mobile@1x.png"), url("../img/index-background-mobile@1x.jpg"), linear-gradient(#65a93c 61%, white 61%);
   background-repeat: no-repeat;
   background-position: center 70%, top center;
   color: white;
   font: {
-    family: "Oswald";
+    family: "Oswald", "Arial", sans-serif;
   }
   padding: 25px 20px;
   text-align: center;
   min-height: 470px;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-    background-image: url("../img/index-can-mobile@2x.png"), url("../img/index-background-mobile@2x.jpg"), linear-gradient(#65a93c 60%, white 60%);
+    background-image: url("../img/index-can-mobile@2x.png"), url("../img/index-background-mobile@2x.jpg"), linear-gradient(#65a93c 61%, white 61%);
     background-size: 280px, 320px, 100%;
   }
 }

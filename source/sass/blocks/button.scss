@@ -4,12 +4,11 @@
   text-align: center;
   text-transform: uppercase;
   text-decoration: none;
-    font: {
+  font: {
     family: "Oswald", "Arial", sans-serif;
     size: 14px;
     weight: normal;
   }
-  color: black;
   margin: 0;
   color: white;
   padding: 10px 0;
@@ -39,5 +38,11 @@
   &:active {
     background-color: #ebebeb;
     color: rgba(68, 68, 68, 0.3);
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .button {
+    font-size: 16px;
   }
 }

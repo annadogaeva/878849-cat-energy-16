@@ -25,13 +25,15 @@
   .product-extra__heading {
     font-size: 20px;
     margin-bottom: 20px;
-    width: 380px;
+    max-width: 380px;
     text-align: left;
   }
 
   .product-extra__wrapper--table {
     display: flex;
     align-items: center;
+    justify-content: space-between;
+    max-width: 100%;
   }
 }
 

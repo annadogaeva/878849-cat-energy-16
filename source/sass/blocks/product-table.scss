@@ -17,11 +17,11 @@
   text-align: right;
 }
 
-  .product-extra {
-    .product-table__cell--price {
-      text-align: right;
-    }
+.product-extra {
+  .product-table__cell--price {
+    text-align: right;
   }
+}
 
 @media (min-width: $tablet-width) {
   .product-table {
@@ -36,9 +36,19 @@
   }
 
   .product-extra {
+    .product-table {
+      display: flex;
+      justify-content: flex-end;
+    }
+
     .product-table__cell {
       border: none;
       text-align: right;
+    }
+
+    .product-table__row {
+      display: flex;
+      justify-content: flex-end;
     }
 
     .product-table__cell--price {

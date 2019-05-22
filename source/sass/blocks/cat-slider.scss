@@ -105,6 +105,14 @@
     &:active {
       border: 2px solid $accent;
     }
+
+    &--left {
+      left: 0%;
+    }
+
+    &--right {
+      left: 92%;
+    }
   }
 }
 

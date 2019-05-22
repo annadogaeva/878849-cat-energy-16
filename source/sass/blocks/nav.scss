@@ -1,5 +1,5 @@
 .nav {
-  display: block;
+  display: none;
   background-color: white;
 }
 
@@ -18,22 +18,20 @@
 
 .nav__link {
   font: {
-    family: "Oswald";
+    family: "Oswald", "Arial", sans-serif;
     size: 20px;
     weight: 500;
   }
   color: black;
   text-transform: uppercase;
   text-decoration: none;
-
-  &--current,
-  &--currentindex {
-    border-bottom: 2px solid $accent;
-    margin-top: 2px;
-  }
 }
 
 @media (min-width: $tablet-width) {
+  .nav {
+    display: block;
+  }
+
   .nav__list {
     display: flex;
     justify-content: flex-end;
@@ -50,6 +48,12 @@
     font-size: 18px;
     font-weight: normal;
     padding-bottom: 10px;
+
+    &--current,
+    &--currentindex {
+      border-bottom: 2px solid $accent;
+      margin-top: 2px;
+    }
   }
 }
 
@@ -59,7 +63,7 @@
   }
 
   .nav__list {
-    margin-left: 460px;
+    margin-left: 450px;
   }
 
   .nav__link {
