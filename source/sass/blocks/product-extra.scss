@@ -9,7 +9,9 @@
   @include heading-small;
   text-transform: uppercase;
   margin-bottom: 15px;
-  width: 380px;
+  width: 70%;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 @media (min-width: $tablet-width) {

@@ -10,15 +10,17 @@
   cursor: pointer;
 }
 
-.checkbox + label:hover::before {
+.checkbox:not(:disabled) + label:hover::before,
+.checkbox:not(:disabled):focus + label::before{
   border: 1px solid #cdcdcd;
 }
 
-.checkbox:active + label::before {
+.checkbox:not(:disabled):active + label::before {
   border: 1px solid #cfcfcf;
 }
 
-.checkbox:active + label {
+.checkbox:active + label,
+.checkbox:disabled + label {
   opacity: 0.3;
 }
 
@@ -30,15 +32,16 @@
   vertical-align: middle;
 }
 
-.checkbox:checked + label:hover::before {
+.checkbox:checked:not(:disabled) + label:hover::before {
   border: 1px solid #cdcdcd;
 }
 
-.checkbox:checked:active + label:hover::before {
+.checkbox:checked:active:not(:disabled) + label:hover::before {
   border: 1px solid #cfcfcf;
 }
 
-.checkbox:checked:active + label:hover {
+.checkbox:checked:active + label,
+.checkbox:checked:disabled + label {
   opacity: 0.3;
 }
 

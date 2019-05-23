@@ -30,7 +30,7 @@
 @media (min-width: $tablet-width) {
   .product {
     width: 45.75%;
-    height: 515px;
+    min-height: 515px;
     background-image: linear-gradient(white 16%, $darker 16%);
     background-color: $darker;
     border: none;
@@ -52,6 +52,10 @@
     align-items: flex-end;
     justify-content: center;
     width: 100%;
+
+    &--extra {
+      display: inline;
+    }
   }
 
   .product__wrapper {

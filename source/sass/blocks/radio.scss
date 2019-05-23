@@ -11,15 +11,17 @@
   cursor: pointer;
 }
 
-.radio + label:hover::before {
+.radio:not(:disabled) + label:hover::before,
+.radio:not(:disabled):focus + label::before {
   border: 1px solid #cdcdcd;
 }
 
-.radio:active + label::before {
+.radio:not(:disabled):active + label::before {
   border: 1px solid #cfcfcf;
 }
 
-.radio:active + label {
+.radio:active + label,
+.radio:disabled + label {
   opacity: 0.3;
 }
 
@@ -32,15 +34,20 @@
   border: 1px solid rgba(207, 207, 207, 0.5);
 }
 
-.radio:checked + label:hover::before {
+.radio:checked:not(:disabled) + label:hover::before {
   border: 1px solid #cdcdcd;
 }
 
-.radio:checked:active + label:hover::before {
+.radio:checked:active:not(:disabled) + label:hover::before {
   border: 1px solid #cfcfcf;
 }
 
-.radio:checked:active + label:hover {
+.radio:checked:active:not(:disabled) + label:hover {
+  opacity: 0.3;
+}
+
+.radio:checked:active + label,
+.radio:checked:disabled + label {
   opacity: 0.3;
 }
 
