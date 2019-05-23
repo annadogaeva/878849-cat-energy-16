@@ -63,12 +63,15 @@
   }
 
   .nav__list {
-    margin-left: 450px;
+    margin-left: 400px;
+    margin-right: -20px;
+    overflow: hidden;
   }
 
   .nav__link {
     color: black;
     font-weight: normal;
+    font-size: 20px;
 
     &--index {
       color: white;

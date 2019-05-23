@@ -2,7 +2,7 @@ ymaps.ready(init);
 
 function init() {
 
-    if (screen.width > 1440) {
+    if (screen.width > 1300) {
         var mapDesktop = new ymaps.Map('map', {
             center: [59.938884, 30.319360],
             zoom: 17,
@@ -19,7 +19,7 @@ function init() {
 
         mapDesktop.geoObjects.add(placemarkDesktop);
 
-    } else if (screen.width >= 768 && screen.width < 1440) {
+    } else if (screen.width >= 768 && screen.width < 1300) {
 
         var mapTablet = new ymaps.Map('map', {
             center: [59.938670, 30.323231],

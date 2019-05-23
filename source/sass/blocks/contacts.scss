@@ -108,6 +108,10 @@
   .contacts {
     position: relative;
     min-height: 400px;
+
+    .container {
+      position: relative;
+    }
   }
 
   .contacts__img-map {
@@ -125,7 +129,7 @@
     height: 200px;
     position: absolute;
     z-index: 2;
-    left: 110px;
+    left: 0;
     top: 95px;
     padding-left: 75px;
     padding-right: 85px;

@@ -88,18 +88,25 @@
   .header {
     padding-top: 35px;
     padding-left: 0;
+    padding-right: 0;
     background-color: transparent;
+    width: 1220px;
+    margin-left: auto;
+    margin-right: auto;
 
     &--index {
       position: absolute;
       top: 0;
-      left: 110px;
-      right: 110px;
+      left: 0;
+      right: 0;
+      margin-left: auto;
+      margin-right: auto;
     }
   }
 
   .header__wrapper {
     align-self: flex-start;
+    padding: 0;
   }
 
   .header__logo {
