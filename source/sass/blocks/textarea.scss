@@ -3,19 +3,21 @@
   min-height: 145px;
   resize: none;
   font-family: "Oswald", "Arial", sans-serif;
-  font-size: 20px;
+  font-size: 16px;
   text-transform: uppercase;
 
   &::placeholder {
     @include heading-small;
     color: #444444;
     text-transform: uppercase;
+    font-size: 16px;
   }
 }
 
 @media (min-width: $tablet-width) {
   .textarea {
     min-height: 175px;
+    margin-top: 75px;
 
     &::placeholder {
       font-size: 20px;

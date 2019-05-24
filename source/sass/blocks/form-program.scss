@@ -18,16 +18,21 @@
 
   &--contacts {
     margin-bottom: -20px;
+    padding-top: 0;
   }
 
   &--comment {
     margin-top: 5px;
-    padding-top: 15px;
+    padding-top: 0;
+  }
+
+  &--extra {
+    padding-top: 0;
   }
 }
 
 .form-program__wrapper--extra {
-  margin-top: 8px;
+  margin-top: 22px;
 }
 
 
@@ -36,6 +41,10 @@
   align-items: center;
   position: relative;
   max-width: 100%;
+}
+
+.form-program__wrapper--contacts {
+  padding-top: 20px;
 }
 
 .form-program__label {
@@ -84,7 +93,7 @@
 
 .form-program__textarea {
   padding: 10px 13px;
-  margin-top: 8px;
+  margin-top: 25px;
 }
 
 .form-program__text {
@@ -94,6 +103,8 @@
 
 .form-program__submit-btn {
   margin-top: 10px;
+  font-size: 16px;
+  padding: 12px 0;
 }
 
 @media (min-width: $tablet-width) {
@@ -113,11 +124,11 @@
     }
 
     &--extra {
-      margin-top: -15px;
       margin-right: -30px;
       overflow: hidden;
       display: flex;
       justify-content: space-between;
+      flex-wrap: wrap;
     }
   }
 
@@ -154,6 +165,10 @@
     &::before {
       width: 125%;
       left: -12%;
+    }
+
+    &--comment {
+      margin-bottom: 0;
     }
   }
 
@@ -224,7 +239,7 @@
     }
 
     &--comment {
-      margin-bottom: 45px;
+      margin-bottom: 35px;
     }
 
     &--extra {
@@ -245,7 +260,7 @@
   }
 
   .form-program__section-text {
-    padding-left: 40px;
+    padding-left: 10px;
     padding-right: 40px;
     margin: 0;
   }

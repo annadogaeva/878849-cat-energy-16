@@ -59,16 +59,17 @@
 
   .header__wrapper {
     justify-content: space-between;
+    padding-left: 10px;
   }
 
   .header__logo {
-    padding-left: 10px;
     width: 200px;
   }
 
   .header__logo-img {
     width: 175px;
     height: 60px;
+    margin: 0;
   }
 
   .header__logo-text {

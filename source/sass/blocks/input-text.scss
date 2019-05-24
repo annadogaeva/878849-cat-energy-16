@@ -3,7 +3,7 @@
   border: 2px solid rgba(207, 207, 207, 0.5);
   font-family: "Oswald", "Arial", sans-serif;
   padding: 10px;
-  font-size: 20px;
+  font-size: 16px;
   text-transform: uppercase;
   width: 100%;
 
@@ -28,6 +28,10 @@
   &:invalid {
     border: 2px solid #ff8888;
   }
+
+  &::placeholder {
+    font-size: 16px;
+  }
 }
 
 .input-text__icon {
@@ -41,6 +45,12 @@
 @media (min-width: $tablet-width) {
   .input-text {
     height: 51px;
+    padding-left: 17px;
+    font-size: 20px;
+
+    &::placeholder {
+      font-size: 20px;
+    }
   }
 
   .input-text__icon {

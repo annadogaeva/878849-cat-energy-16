@@ -18,7 +18,7 @@
   <div style="display: none">
     <include src="build/img/sprite.svg"></include>
   </div>
-    <header class="header container">
+  <header class="header container">
     <div class="header__wrapper">
       <div class="header__logo">
         <a href="index.html" class="header__link">
@@ -31,16 +31,16 @@
         <svg width="103" height="20" class="header__logo-text">
           <use xlink:href="#logo-mobile-text"></use>
         </svg>
-            <div class="header__menu-btn">
-        <a href="#"><svg width="25" height="18">
-            <use xlink:href="#icon-mobile-menu"></use>
-          </svg></a>
-      </div>
-      <div class="header__close-btn">
-        <a href="#"><svg width="25" height="18">
-            <use xlink:href="#icon-close"></use>
-          </svg></a>
-      </div>
+        <div class="header__menu-btn">
+          <a href="#"><svg width="25" height="18">
+              <use xlink:href="#icon-mobile-menu"></use>
+            </svg></a>
+        </div>
+        <div class="header__close-btn">
+          <a href="#"><svg width="25" height="18">
+              <use xlink:href="#icon-close"></use>
+            </svg></a>
+        </div>
       </div>
     </div>
     <nav class="nav">
@@ -68,7 +68,7 @@
               <label for="cat-weight" class="form-program__label">Вес (кг):*</label><input type="text" id="cat-weight" required name="cat-weight" class="form-program__text input-text" autocomplete="off" placeholder="7">
             </div>
             <div class="form-program__wrapper form-program__wrapper--field">
-              <label for="cat-age" class="form-program__label">Возраст (лет):</label><input type="text" id="cat-age" name="cat-age" class="form-program__text input-text" autocomplete="off"  placeholder="7">
+              <label for="cat-age" class="form-program__label">Возраст (лет):</label><input type="text" id="cat-age" name="cat-age" class="form-program__text input-text" autocomplete="off" placeholder="7">
             </div>
           </fieldset>
           <fieldset class="form-program__section form-program__section--main form-program__section--radio">
@@ -79,10 +79,12 @@
           </fieldset>
         </div>
         <fieldset class="form-program__section form-program__section--contacts">
-          <div class="form-program__section-name"><span class="container"><span class="form-program__section-text">Контактные данные (владельца кота)</span></div></h3>
+          <h3 class="form-program__section-name"><span class="container"><span class="form-program__section-text">Контактные данные (владельца кота)
+              </span></span>
+          </h3>
           <div class="form-program__wrapper form-program__wrapper--contacts">
             <div class="form-program__wrapper form-program__wrapper--field form-program__wrapper--email">
-              <label for="email" class="form-program__label">E-mail:*</label><input type="email" id="email" required name="email" class="form-program__text input-text" autocomplete="off"  placeholder="kuklachev@gmail.com"><svg width="17" height="13" class="input-text__icon">
+              <label for="email" class="form-program__label">E-mail:*</label><input type="email" id="email" required name="email" class="form-program__text input-text" autocomplete="off" placeholder="kuklachev@gmail.com"><svg width="17" height="13" class="input-text__icon">
                 <use xlink:href="#icon-mail"></use>
               </svg>
             </div>
@@ -91,10 +93,9 @@
                 <use xlink:href="#icon-phone"></use>
               </svg></div>
           </div>
-          </div>
         </fieldset>
         <fieldset class="form-program__section form-program__section--comment">
-          <h3 class="form-program__section-name"><span class="container"><span class="form-program__section-text">Комментарий</span></span></h3>
+          <h3 class="form-program__section-name form-program__section-name--comment"><span class="container"><span class="form-program__section-text">Комментарий</span></span></h3>
           <textarea placeholder="Расскажите обо всех повадках кота" name="cat-info" class="form-program__textarea textarea" rows="5" autocomplete="off"></textarea>
         </fieldset>
         <fieldset class="form-program__section form-program__section--extra">
@@ -115,11 +116,11 @@
     <section class="contacts">
       <h2 class="visually-hidden">Контактная информация</h2>
       <div class="container">
-      <div class="contacts__wrapper contacts__wrapper--inner">
-        <div class="contacts__invite">Приглашаем к&nbsp;сотрудничеству дилеров!</div>
-        <div class="contacts__address">ул. Большая Конюшенная, д. 19/8 <span class="contacts__city">Санкт-Петербург</span></div>
+        <div class="contacts__wrapper contacts__wrapper--inner">
+          <div class="contacts__invite">Приглашаем к&nbsp;сотрудничеству дилеров!</div>
+          <div class="contacts__address">ул. Большая Конюшенная, д. 19/8 <span class="contacts__city">Санкт-Петербург</span></div>
+        </div>
       </div>
-    </div>
       <div class="contacts__maps">
         <div class="contacts__img-map">
           <img src="img/map-pin.png" alt="ул. Большая Конюшенная, д. 19/8 г.Санкт-Петербург" class="contacts__pin" width="60" height="55">

@@ -11,7 +11,7 @@
 }
 
 .checkbox:not(:disabled) + label:hover::before,
-.checkbox:not(:disabled):focus + label::before{
+.checkbox:not(:disabled):focus + label::before {
   border: 1px solid #cdcdcd;
 }
 
