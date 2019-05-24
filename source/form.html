@@ -60,45 +60,45 @@
         <h3 class="visually-hidden">Анкета</h3>
         <div class="form-program__wrapper form-program__wrapper--main">
           <fieldset class="form-program__section form-program__section--main">
-            <legend class="visually-hidden">Основные данные</legend>
+            <h3 class="visually-hidden">Основные данные</h3>
             <div class="form-program__wrapper form-program__wrapper--field">
-              <label for="cat-name" class="form-program__label">Имя:*</label><input type="text" id="cat-name" required name="cat-name" class="form-program__text input-text" autocomplete="off">
+              <label for="cat-name" class="form-program__label">Имя:*</label><input type="text" id="cat-name" required name="cat-name" class="form-program__text input-text" autocomplete="off" placeholder="Барсик">
             </div>
             <div class="form-program__wrapper form-program__wrapper--field">
-              <label for="cat-weight" class="form-program__label">Вес (кг):*</label><input type="text" id="cat-weight" required name="cat-weight" class="form-program__text input-text" autocomplete="off">
+              <label for="cat-weight" class="form-program__label">Вес (кг):*</label><input type="text" id="cat-weight" required name="cat-weight" class="form-program__text input-text" autocomplete="off" placeholder="7">
             </div>
             <div class="form-program__wrapper form-program__wrapper--field">
-              <label for="cat-age" class="form-program__label">Возраст (лет):</label><input type="text" id="cat-age" name="cat-age" class="form-program__text input-text" autocomplete="off">
+              <label for="cat-age" class="form-program__label">Возраст (лет):</label><input type="text" id="cat-age" name="cat-age" class="form-program__text input-text" autocomplete="off"  placeholder="7">
             </div>
           </fieldset>
           <fieldset class="form-program__section form-program__section--main form-program__section--radio">
-            <legend class="visually-hidden">Выбор программы</legend>
+            <h3 class="visually-hidden">Выбор программы</h3>
             <input type="radio" name="program-select" id="program1" class="visually-hidden radio"><label for="program1" class="form-program__label">Похудение</label>
             <input type="radio" name="program-select" id="program2" class="visually-hidden radio"><label for="program2" class="form-program__label">Набор массы</label>
             <input type="radio" name="program-select" id="program3" class="visually-hidden radio"><label for="program3" class="form-program__label">Не знаю (нужен ваш совет)</label>
           </fieldset>
         </div>
         <fieldset class="form-program__section form-program__section--contacts">
-          <legend class="form-program__section-name"><span class="container"><span class="form-program__section-text">Контактные данные (владельца кота)</span></span></legend>
+          <div class="form-program__section-name"><span class="container"><span class="form-program__section-text">Контактные данные (владельца кота)</span></div></h3>
           <div class="form-program__wrapper form-program__wrapper--contacts">
             <div class="form-program__wrapper form-program__wrapper--field form-program__wrapper--email">
-              <label for="email" class="form-program__label">E-mail:*</label><input type="email" id="email" required name="email" class="form-program__text input-text" autocomplete="off"><svg width="17" height="13" class="input-text__icon">
+              <label for="email" class="form-program__label">E-mail:*</label><input type="email" id="email" required name="email" class="form-program__text input-text" autocomplete="off"  placeholder="kuklachev@gmail.com"><svg width="17" height="13" class="input-text__icon">
                 <use xlink:href="#icon-mail"></use>
               </svg>
             </div>
             <div class="form-program__wrapper form-program__wrapper--field form-program__wrapper--phone">
-              <label for="phone-number" class="form-program__label">Телефон:*</label><input type="tel" id="phone-number" required name="phone-number" class="form-program__text input-text" autocomplete="off"><svg width="20" height="20" class="input-text__icon">
+              <label for="phone-number" class="form-program__label">Телефон:*</label><input type="tel" id="phone-number" required name="phone-number" class="form-program__text input-text" autocomplete="off" placeholder="8 (960) 900-60-90"><svg width="20" height="20" class="input-text__icon">
                 <use xlink:href="#icon-phone"></use>
               </svg></div>
           </div>
           </div>
         </fieldset>
         <fieldset class="form-program__section form-program__section--comment">
-          <legend class="form-program__section-name"><span class="container"><span class="form-program__section-text">Комментарий</span></span></legend>
+          <h3 class="form-program__section-name"><span class="container"><span class="form-program__section-text">Комментарий</span></span></h3>
           <textarea placeholder="Расскажите обо всех повадках кота" name="cat-info" class="form-program__textarea textarea" rows="5" autocomplete="off"></textarea>
         </fieldset>
         <fieldset class="form-program__section form-program__section--extra">
-          <legend class="form-program__section-name"><span class="container"><span class="form-program__section-text">Дополнительно</span></span></legend>
+          <h3 class="form-program__section-name"><span class="container"><span class="form-program__section-text">Дополнительно</span></span></h3>
           <div class="form-program__wrapper form-program__wrapper--extra">
             <input type="checkbox" id="checkbox1" class="visually-hidden checkbox" name="nosugar"><label for="checkbox1" class="form-program__label form-program__label--checkbox">Сахарозаменитель</label>
             <input type="checkbox" id="checkbox2" class="visually-hidden checkbox" name="water"><label for="checkbox2" class="form-program__label form-program__label--checkbox">Питьевая вода</label>

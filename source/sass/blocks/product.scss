@@ -36,6 +36,8 @@
     border: none;
     position: relative;
     padding: 0 0 35px 0;
+    display: flex;
+    flex-direction: column;
   }
 
   .product__content {
@@ -49,19 +51,21 @@
 
   .product__link {
     display: flex;
-    align-items: flex-end;
     justify-content: center;
+    align-items: flex-end;
     width: 100%;
 
     &--extra {
       display: inline;
     }
+
+    &--picture {
+      height: 208px;
+    }
   }
 
   .product__wrapper {
     flex-direction: column;
-    justify-content: flex-end;
-    margin-top: auto;
   }
 
   .product__heading {
